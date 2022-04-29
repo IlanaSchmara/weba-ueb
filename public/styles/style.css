@@ -1,0 +1,282 @@
+/** CSS-Datei zum stylen von unseren Website-Komponenten */
+
+/**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
+
+.flex-weba-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: normal;
+}
+
+.flex-weba-header-child1 {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: normal;
+}
+
+#titletext {
+    padding: 12px;
+    margin: 50px;
+
+}
+
+.flex-weba-header-child2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: normal;
+}
+
+.flex-weba-header-child3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: normal;
+}
+
+
+.logo {
+    width: 50px;
+    height: 5vh;
+}
+
+
+/**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
+
+.footer-flex-container {
+    background-color: rgb(172, 171, 171);
+    border-style: hidden;
+    height: 10%;
+    width: 90%;
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.flex-items:nth-child(1),
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+/** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
+.combined-footer-flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+/** 2 beinhaltet Logo/Titel*/
+/** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
+.second-footer-flex-container,
+.third-footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+
+/** Seite hoch-Symbol**/
+.pageUp {
+    width: 40px;
+}
+
+.footerElements {
+    width: 40px;
+}
+
+/**------------------------ Design-Anpassungen der Startseite------------------------------------ */
+
+.startseite-container {
+    position: relative;
+    text-align: center;
+}
+
+.centered-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+    font-size: large;
+}
+
+.motiavtion-text {
+    line-height: 1.65;
+    text-align: justify;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+.h4{
+    font-size: 28px;
+}
+
+#startseite-ueberschrift {
+    text-align: left;
+    margin: 2vh;
+    font-size: 7vh;
+}
+
+/** Überschrift **/
+#startseite-kundenm {
+    text-align: left;
+    font-size: 6vh;
+    margin: 2vh;
+}
+
+/** Bild oben auf der Startseite **/
+#startseite-pic {
+    width: 100%;
+}
+
+.flex-kundenmeinungen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: stretch;
+    padding: 15px;
+}
+
+/** 3 Flex-Boxen für Bild + Kundenmeinung */
+.flex-items:nth-child(1),
+.flex-items:nth-child(2),
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    padding: 0 12px;
+}
+
+/** Bild in Flexbox */
+.flex-it:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    order: 0;
+}
+
+/** Text in Flexbox Kundenmeinung */
+.flex-it:nth-child(2) {
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    text-align: center;
+    font-size: 1em;
+    width: 23%;
+}
+
+#kunde-pic-1,
+#kunde-pic-2,
+#kunde-pic-3 {
+    vertical-align: middle;
+    width: 12vh;
+    height: 18vh;
+    border-radius: 50%; 
+}
+
+
+.flex-kundemeinung-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+/**------------------- Login-, Registrieren-, Onboarding-Seite Gestaltung--------------------- */
+
+.login-container,
+.registrieren-container,
+.onboarding-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.login-kasten,
+.registrieren-kasten,
+.onboarding-kasten {
+    display: flex;
+    flex-direction: column;
+    width: 33vh;
+    text-align: center;
+}
+
+
+
+.adress-daten {
+    display: flex;
+    flex-direction: row;
+}
+
+#registrieren_pic,
+#onboarding_pic {
+    width: 50%
+}

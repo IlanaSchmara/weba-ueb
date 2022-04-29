@@ -1,0 +1,25 @@
+---
+{
+"title": "Onboarding",
+"template": "full-html",
+"Onboarding": true
+}
+---
+
+<div class="onboarding-container">
+        <div class="onboarding-kasten">
+             <h1> Überschrift </h1>
+             <p> Onboarding Text </p>
+             <input type="text" name="eingabe-vorname" value="Vorname">
+             <input type="text" name="eingabe-nachname" value="Nachname">
+             <div class="adress-daten">
+                <input type="number" name="plz" value="">
+                <input type="text" name="eingabe-stadt" value="Stadt">
+             </div>
+             <input type="text" name="eingabe-straße" value="Straße + Haus-Nr.">
+             <button onclick="location.href='/index.hbs'" type="submit" name="weiter-knopf"> 
+                Weiter
+             </button>
+        </div>
+        <img id="onboarding_pic" alt="Onboarding Bild" src="/public/images/onboarding.jpg"/>
+</div>

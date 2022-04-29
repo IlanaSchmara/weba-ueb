@@ -1,0 +1,22 @@
+---
+{
+"title": "Registrieren",
+"template": "full-html",
+"Register": true
+}
+---
+
+<div class="registrieren-container">
+    <div class="registrieren-kasten">
+        <h1> Überschrift </h1>
+        <p> Registrieren Text </p>
+        <input type="text" name="eingabe-nutzername" value="Nutzername">
+        <input type="password" placeholder="Passwort" name="eingabe-passwort">
+        <input type="password" placeholder="Passwort wiederholen" name="eingabe-passwort-wdh">
+        <input type="text" name="eingabe-email" value="E-Mail-Adresse">
+        <button onclick="location.href='/onboarding.hbs'" type="submit" name="senden-knopf">
+            Registrieren, weiter zu Onboarding
+        </button>
+    </div>
+    <img id="registrieren_pic" alt="Registrieren Bild" src="/public/images/registrieren.png" />
+</div>

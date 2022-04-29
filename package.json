@@ -1,0 +1,15 @@
+{
+  "name": "web-anwendungen",
+  "version": "1.0.0",
+  "description": "Übung Web-Anwendungen an der Fachhochschule Wedel im Sommersemester 2022",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "web_041",
+  "license": "MIT",
+  "dependencies": {
+    "fhw-web": "^1.1.5"
+  }
+}
