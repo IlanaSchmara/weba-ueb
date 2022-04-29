@@ -179,6 +179,7 @@
     text-align: left;
     font-size: 6vh;
     margin: 2vh;
+    margin-right: auto;
 }
 
 /** Bild oben auf der Startseite **/
@@ -186,6 +187,14 @@
     width: 100%;
 }
 
+/** Container mit Überschrift, flexbox für KM und Registrierknopf */
+.startseite-kundenmeinungen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** Container mit KM */
 .flex-kundenmeinungen {
     display: flex;
     flex-direction: row;
@@ -274,7 +283,27 @@
     align-content: stretch;
 }
 
+.log-reg-buttons {
+    background-color: #b3b3b3;
+    /* Grey */
+    border: 2px solid #4b4b4b;
+    ;
+    color: white;
+    /* text colour*/
+    padding: 10px 20px;
+    /* wie viel Button um Text herum ist, höhe breite */
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 2px;
+    /* rundet den Button leicht ab*/
+}
 
+/** Button wird blau bei hover */
+.log-reg-buttons:hover {
+    background-color: #a8d1d6;
+    /* blau */
+}
 
 .adress-daten {
     display: flex;
