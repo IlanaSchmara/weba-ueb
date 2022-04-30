@@ -1,0 +1,47 @@
+---
+{
+"title": "Themenseite",
+"template": "full-html",
+"logged-in" : true
+}
+---
+<div class="flex-themenseite-oben">
+    <div class="flex-themenseite-item"> <img class="themen-oben-pic" alt="Ente"
+            src="/public/images//profile_pictures/p_blank.jpg" /></div>
+    <div class="flex-themenseite-item">
+        <h3 id="themen-ueberschrift">Überschrift 1</h3>
+    </div>
+    <div class="flex-themenseite-item"><button onclick="location.href='/hauptseite.hbs'" id="back-button" type="button"
+            name="back-button">
+            Zurück zur Hauptseite
+        </button></div>
+
+</div>
+
+
+<div class="flex-themenseite-themen">
+    <ol class="ordered-themen-list">
+        <li>
+            <div class="flex-thema1">
+                <div class="flex-thema1-item">
+                    <a href="/profil-fremd.hbs"><img class="thema1-pic" alt="Ente"
+                            src="/public/images//profile_pictures/p_blank.jpg" /> </a>
+                </div>
+                <div class="flex-thema1-item">
+                    <p> Flexbox content begins with a container whose display property is set to flex or inline-flex.
+                        Any elements within that container are now automatically flex-items. Every flexible box layout
+                        follows two axes. The main axis is the axis along which the flex items follow each other. The
+                        cross axis is the axis perpendicular to the main axis. For example, if we have the
+                        flex-direction set to row, the main axis is horizontal (left to right unless the direction is
+                        set rtl) and the cross direction is vertical (top to bottom)</p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="flex-thema-ao"></div>
+        </li>
+        <li>
+            <div class="flex-thema-ao"></div>
+        </li>
+    </ol>
+</div>

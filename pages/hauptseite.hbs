@@ -5,3 +5,68 @@
 "logged-in" : true
 }
 ---
+
+<img id="startseite-pic" alt="Ente" src="/public/images/main-page.jpg" />
+
+<div class="search">
+
+  <input id="main-page-search" type="text" placeholder="Search.." aria-required="true">
+  <button type="submit" class="searchButton">
+    <i class="fa fa-search"></i>
+  </button>
+</div>
+
+
+<div class="main-table">
+  <!--Überschriften der Tabelle -->
+  <div class="main-table-heading">
+
+    <div class="main-table-cell">
+      <h3>Thema</h3>
+    </div>
+    <div class="main-table-cell">
+      <h3>Reaktionen</h3>
+    </div>
+    <div class="main-table-cell">
+      <h3>Letzte Nachricht</h3>
+    </div>
+
+  </div>
+  <div class="main-table-entry">
+
+    <div class="main-table-cell"> <img class="main-tab-pic" alt="Ente"
+        src="/public/images//profile_pictures/p_blank.jpg" /></div>
+    <div class="main-table-cell"><a href="/themenseite.hbs">Thema1</a></div>
+    <div class="main-table-cell">anzahl</div>
+    <div class="main-table-cell">text</div>
+
+  </div>
+  <div class="main-table-entry">
+
+    <div class="main-table-cell"><img class="main-tab-pic" alt="Ente" src="/public/images//profile_pictures/p2.jpg" />
+    </div>
+    <div class="main-table-cell"><a href="/themenseite.hbs">Thema2</a></div>
+    <div class="main-table-cell">anzahl2</div>
+    <div class="main-table-cell">
+      <p class="main-table-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt rem odit quis
+        quaerat. In dolorem praesentium velit ea esse consequuntur cum fugit sequi voluptas ut possimus voluptatibus
+        deserunt nisi eveniet!</p>
+    </div>
+
+  </div>
+
+  <div class="main-table-entry">
+
+    <div class="main-table-cell"><img class="main-tab-pic" alt="Ente" src="/public/images//profile_pictures/p1.jpg" />
+    </div>
+    <div class="main-table-cell"><a href="/themenseite.hbs">Thema3</a></div>
+    <div class="main-table-cell">anzahl2</div>
+    <div class="main-table-cell">text</div>
+
+  </div>
+
+</div>
+
+<button onclick="location.href='/themenseite.hbs'" id="new-topic-button" type="button" name="themen-button">
+  Neues Thema erstellen
+</button>

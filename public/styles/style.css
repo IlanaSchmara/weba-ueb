@@ -1,5 +1,6 @@
 /** CSS-Datei zum stylen von unseren Website-Komponenten */
 
+
 /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
 
 .flex-weba-header {
@@ -12,43 +13,74 @@
 }
 
 .flex-weba-header-child1 {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: normal;
-}
-
-#titletext {
-    padding: 12px;
-    margin: 50px;
-
-}
-
-.flex-weba-header-child2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
-    align-content: normal;
+    align-items: center;
+    align-content: center;
 }
 
+.flex-weba-header-child2,
 .flex-weba-header-child3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: normal;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+
+#title-text {
+    padding: 2px;
+    font-size: 2vh;
+    margin-left: 4px;
+
+}
+
+#header-logo {
+    margin-left: 1vh;
+    height: 52px;
+}
+
+.logo {
+    padding: 2px;
+    height: 6vh;
+    margin-left: 1vh;
+}
+
+.flex-weba-header-child3 ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+li:last-child {
+    margin-right: 0px;
 }
 
 
-.logo {
-    width: 50px;
-    height: 5vh;
+#header-user-pic {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    margin-left: 2vh;
+}
+
+.header-logged-in {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
 }
 
 
@@ -191,24 +223,27 @@
 .startseite-kundenmeinungen {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
+    align-content: center;
 }
 
 /** Container mit KM */
 .flex-kundenmeinungen {
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-start;
-    align-content: stretch;
+    align-content: center;
     padding: 15px;
 }
 
 /** 3 Flex-Boxen für Bild + Kundenmeinung */
 .flex-items:nth-child(1),
-.flex-items:nth-child(2),
-.flex-items:nth-child(3) {
+.flex-items:nth-child(2) .flex-items:nth-child(2) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -216,6 +251,7 @@
     align-self: auto;
     order: 0;
     padding: 0 12px;
+    margin-left: 4vh;
 }
 
 /** Bild in Flexbox */
@@ -287,7 +323,6 @@
     background-color: #b3b3b3;
     /* Grey */
     border: 2px solid #4b4b4b;
-    ;
     color: white;
     /* text colour*/
     padding: 10px 20px;
@@ -318,4 +353,257 @@
     width: 40vh;
     height: 40vh;
     border-radius: 50%;
+}
+
+/**--------------------Hauptseiten-Gestaltung-------------------------*/
+
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px dotted #a7a7a7;
+    background: #a7a7a7;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+#main-page-search {
+    width: 20%;
+    border: 3px solid #a7a7a7;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #aaaaaa;
+}
+
+#main-page-search:focus {
+    color: #6acec9;
+}
+
+.main-table {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+    outline: 1px dashed rgb(107, 107, 107);
+
+    overflow-y: scroll;
+}
+
+.main-table-cell {
+    display: flex;
+    flex-direction: row;
+    width: 26%;
+    background: rgb(255, 255, 255);
+    margin: 2%;
+    flex: auto;
+    text-align: center;
+
+    min-height: 50px;
+}
+
+.main-table-entry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+    outline: 1px solid rgb(107, 107, 107);
+}
+
+.main-table-heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+    outline: 1px solid rgb(107, 107, 107);
+}
+
+.main-table-heading:nth-child(1) {
+    order: 1;
+}
+
+.main-table-heading:nth-child(2) {
+    order: 3;
+}
+
+.main-table-heading:nth-child(3) {
+    order: 4;
+}
+
+.main-table-entry:nth-child(1) {
+    order: 1;
+}
+
+.main-table-entry:nth-child(2) {
+    order: 2;
+}
+
+.main-table-entry:nth-child(3) {
+    order: 3;
+}
+
+.main-table-entry:nth-child(4) {
+    order: 4;
+
+}
+
+.main-table-text {
+    white-space: nowrap;
+    width: 75ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#new-topic-button {
+    background-color: #b3b3b3;
+    /* Grey */
+    border: 2px solid #4b4b4b;
+    color: white;
+    /* text colour*/
+    padding: 10px 20px;
+    /* wie viel Button um Text herum ist, höhe breite */
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 2px;
+    /* rundet den Button leicht ab*/
+    margin-left: 5vh;
+    margin-top: 2vh;
+}
+
+#new-topic-button:hover {
+    background-color: #a8d1d6;
+    /* blau */
+}
+
+.main-tab-pic {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+}
+
+/**--------------------Kontaktformular-------------------------*/
+
+.kontakt-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    margin-left: 4vh;
+}
+
+
+#kontakt-heading {
+    font-size: 24px;
+}
+
+/**--------------------Themenseite-Designanpassungen-------------------------*/
+.flex-themenseite-oben {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-between;
+    margin-left: 10%;
+    width: 75%;
+}
+
+.flex-themenseite-themen {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+#back-button {
+    margin-left: 10%;
+}
+
+.themen-oben-pic {
+    width: 24vh;
+    border-radius: 50%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: #4b4b4b;
+}
+
+#themen-ueberschrift {
+    font-size: 24px;
+    margin-left: 3vh;
+}
+
+.flex-themenseite-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+}
+
+.flex-themenseite-item:nth-child(2) {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-thema1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    align-content: normal;
+
+}
+
+
+.flex-thema1-item:nth-child(2) {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    margin-left: 2vh;
+    border-style: solid;
+    border-color: #4b4b4b;
+
+}
+
+.thema1-pic {
+    width: 18vh;
+    border-radius: 50%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: #4b4b4b;
 }

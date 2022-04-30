@@ -3,27 +3,46 @@
 
 <header class="flex-weba-header">
 
-    <div class="flex-items">
+    <div class="flex-item-mp">
         <div class="flex-weba-header-child1">
-            <a href="/index.hbs"><img class="logo" alt="LogoBild" src="/public/images/logo.png"></a>
+            <a href="/index.hbs"><img id="header-logo" alt="LogoBild" src="/public/images/logo.png"></a>
             <p id="title-text">
                 <b> Titel </b>
             </p>
         </div>
     </div>
-    <div class="flex-items">
+    <div class="flex-item-mp">
         <div class="flex-weba-header-child2">
             {{#if page.Startseite}}
             {{include 'navigation'}}
             {{/if}}
         </div>
     </div>
-    <div class="flex-items">
+    <div class="flex-item-mp">
         <div class="flex-weba-header-child3">
             {{#if page.Register}}
-            <a href="/registrieren.hbs"> Registrieren</a>
-            <a href="/login.hbs">Login</a>
+            <ul>
+                <li>
+                    <button onclick="location.href='/registrieren.hbs'" class="log-reg-buttons" type="button"
+                        name="register-button">
+                        Registrieren
+                    </button>
+                </li>
+                <li><button onclick="location.href='/login.hbs'" class="log-reg-buttons" type="button"
+                        name="register-button">
+                        Login
+                    </button>
+            </ul>
             {{/if}}
+            <div class="header-logged-in">
+                {{#if page.logged-in}}
+                <button onclick="#" class="log-reg-buttons" type="submit" name="logout-button">
+                    Logout
+                </button>
+                <a href="/profil-selbst.hbs"><img id="header-user-pic" alt="Kunde 3"
+                        src="/public/images/profile_pictures/p1.jpg" /></a>
+                {{/if}}
+            </div>
         </div>
     </div>
 
