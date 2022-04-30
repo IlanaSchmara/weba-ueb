@@ -607,3 +607,50 @@ li:last-child {
     border-style: solid;
     border-color: #4b4b4b;
 }
+
+/** --- styled alle themenseiten-einträge------ */
+.flex-thema-ao {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 2%;
+    margin-left: 10%;
+
+}
+
+.flex-thema-ao-item {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+/** styled nur den text dieser einträge*/
+.flex-thema-ao-item:nth-child(2) {
+    width: 43%;
+    /* gibt die weite des Texts vor */
+    margin-left: 2vh;
+    border-style: dashed;
+    border-color: #4b4b4b;
+
+}
+
+.flex-thema-ao-item:nth-child(2)>p,
+.flex-thema1-item:nth-child(2)>p {
+    margin-left: 1vh;
+}
+
+/** Bilder der Fremdnutzer-Einträge */
+.thema-ao-pic {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: #4b4b4b;
+}
