@@ -403,8 +403,10 @@ li:last-child {
     align-items: stretch;
     align-content: center;
     outline: 1px dashed rgb(107, 107, 107);
-
     overflow-y: scroll;
+    margin-left: 2%;
+    max-width: 90%;
+    padding: 1%;
 }
 
 .main-table-cell {
@@ -439,36 +441,8 @@ li:last-child {
     outline: 1px solid rgb(107, 107, 107);
 }
 
-.main-table-heading:nth-child(1) {
-    order: 1;
-}
 
-.main-table-heading:nth-child(2) {
-    order: 3;
-}
-
-.main-table-heading:nth-child(3) {
-    order: 4;
-}
-
-.main-table-entry:nth-child(1) {
-    order: 1;
-}
-
-.main-table-entry:nth-child(2) {
-    order: 2;
-}
-
-.main-table-entry:nth-child(3) {
-    order: 3;
-}
-
-.main-table-entry:nth-child(4) {
-    order: 4;
-
-}
-
-.main-table-text {
+p.main-table-text {
     white-space: nowrap;
     width: 75ch;
     overflow: hidden;
@@ -529,8 +503,10 @@ li:last-child {
     justify-content: flex-start;
     align-items: center;
     align-content: space-between;
-    margin-left: 10%;
-    width: 75%;
+    margin-left: 8%;
+    width: 85%;
+    background-color: #ced5d4;
+    padding: 1%;
 }
 
 .flex-themenseite-themen {
@@ -557,6 +533,7 @@ li:last-child {
 #themen-ueberschrift {
     font-size: 24px;
     margin-left: 3vh;
+    text-decoration: underline;
 }
 
 .flex-themenseite-item {
@@ -586,7 +563,6 @@ li:last-child {
 
 }
 
-
 .flex-thema1-item:nth-child(2) {
     display: block;
     flex-grow: 1;
@@ -608,6 +584,20 @@ li:last-child {
     border-color: #4b4b4b;
 }
 
+.flex-thema1-item figcaption {
+    font-family: Arial;
+    color: #4b4b4b;
+    margin-left: 30%;
+    margin-top: 3%;
+}
+
+.flex-thema-ao-item figcaption {
+    font-family: Arial;
+    color: #4b4b4b;
+    margin-left: 22%;
+    margin-top: 3%;
+}
+
 /** --- styled alle themenseiten-einträge------ */
 .flex-thema-ao {
     display: flex;
@@ -621,13 +611,36 @@ li:last-child {
 
 }
 
-.flex-thema-ao-item {
+.flex-thema-new {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 2%;
+    margin-left: 38%;
+}
+
+.flex-thema-ao-item,
+.flex-thema-new-item {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: auto;
     order: 0;
+}
+
+.flex-thema-new-item>.thema-ao-pic {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    margin-left: 20%;
+    border-style: solid;
+    border-color: #4b4b4b;
+    margin-bottom: 28%;
+
 }
 
 /** styled nur den text dieser einträge*/
@@ -640,6 +653,30 @@ li:last-child {
 
 }
 
+figure>input {
+    background-color: #FFF;
+    min-width: 100%;
+    min-height: 140px;
+}
+
+/** selects the button after figcaption to submit a post*/
+figcaption>button {
+    background-color: #b3b3b3;
+    /* Grey */
+    border: 2px solid #4b4b4b;
+    color: white;
+    /* text colour*/
+    padding: 10px 20px;
+    /* wie viel Button um Text herum ist, höhe breite */
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 2%;
+    border-radius: 2px;
+    /* rundet den Button leicht ab*/
+}
+
+/** Text der Posts*/
 .flex-thema-ao-item:nth-child(2)>p,
 .flex-thema1-item:nth-child(2)>p {
     margin-left: 1vh;

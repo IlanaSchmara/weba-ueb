@@ -9,7 +9,8 @@
     <div class="flex-themenseite-item"> <img class="themen-oben-pic" alt="Ente"
             src="/public/images//profile_pictures/p_blank.jpg" /></div>
     <div class="flex-themenseite-item">
-        <h3 id="themen-ueberschrift">Überschrift 1</h3>
+        <h3 id="themen-ueberschrift">Topic: Really wanted to talk about this thought that's been in my head for a while.
+        </h3>
     </div>
     <div class="flex-themenseite-item"><button onclick="location.href='/hauptseite.hbs'" id="back-button" type="button"
             name="back-button">
@@ -24,24 +25,34 @@
         <li>
             <div class="flex-thema1">
                 <div class="flex-thema1-item">
-                    <a href="/profil-fremd.hbs"><img class="thema1-pic" alt="Ente"
-                            src="/public/images//profile_pictures/p_blank.jpg" /> </a>
+                    <!-- figure makes html think this is one item -->
+                    <figure>
+                        <a href="/profil-fremd.hbs"><img class="thema1-pic" alt="Ente"
+                                src="/public/images//profile_pictures/p_blank.jpg" />
+                        </a>
+                        <figcaption> Name 1</figcaption>
+                    </figure>
                 </div>
                 <div class="flex-thema1-item">
-                    <p> Flexbox content begins with a container whose display property is set to flex or inline-flex.
-                        Any elements within that container are now automatically flex-items. Every flexible box layout
-                        follows two axes. The main axis is the axis along which the flex items follow each other. The
-                        cross axis is the axis perpendicular to the main axis. For example, if we have the
-                        flex-direction set to row, the main axis is horizontal (left to right unless the direction is
-                        set rtl) and the cross direction is vertical (top to bottom)</p>
+                    <p> So as you've read in the title, I wanted to talk about something that's been on my mind. I can't
+                        really talk about this with anybody else.
+                        But I've had an out of body experience. One day I woke up in Elon Musk's Body. And now I've
+                        decided to make this topic consist out of his Twitter Posts. And only his Twitter Posts. Because
+                        I'm amazed by the shitposting this billionaire is able to do. New random thoughts every day.
+                        You'd think he wouldn't even have the time to be on Twitter for so long every day. It must be a
+                        dream come true for him to finally own that website.
+                    </p>
                 </div>
             </div>
         </li>
         <li>
             <div class="flex-thema-ao">
                 <div class="flex-thema-ao-item">
-                    <a href="/profil-fremd.hbs"><img class="thema-ao-pic" alt="Ente"
-                            src="/public/images//profile_pictures/p1.jpg" /> </a>
+                    <figure>
+                        <a href="/profil-fremd.hbs"><img class="thema-ao-pic" alt="Ente"
+                                src="/public/images//profile_pictures/p1.jpg" /> </a>
+                        <figcaption> Name 2</figcaption>
+                    </figure>
                 </div>
                 <div class="flex-thema-ao-item">
                     <p> The far left hates everyone, themselves included! <br>
@@ -54,8 +65,11 @@
         <li>
             <div class="flex-thema-ao">
                 <div class="flex-thema-ao-item">
-                    <a href="/profil-fremd.hbs"><img class="thema-ao-pic" alt="Ente"
-                            src="/public/images//profile_pictures/p2.jpg" /> </a>
+                    <figure>
+                        <a href="/profil-fremd.hbs"><img class="thema-ao-pic" alt="Ente"
+                                src="/public/images//profile_pictures/p2.jpg" /> </a>
+                        <figcaption> Name 3</figcaption>
+                    </figure>
                 </div>
                 <div class="flex-thema-ao-item">
                     <p> Peace. Peace? I hate the word. Those who do care about peace (myself aspirationally included)
@@ -64,5 +78,18 @@
                 </div>
             </div>
         </li>
+
     </ol>
+    <div class="flex-thema-new">
+        <div class="flex-thema-new-item">
+            <figure>
+                <input type="text" name="newPost" placeholder="..." required maxlength="300" size="50">
+                <figcaption id="figcaption2"><button type="submit" formmethod="get">Submit Post.</button></figcaption>
+            </figure>
+        </div>
+        <div class="flex-thema-new-item">
+            <img class="thema-ao-pic" alt="Ente" src="/public/images//profile_pictures/p1.jpg" />
+        </div>
+    </div>
+
 </div>
