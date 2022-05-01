@@ -6,22 +6,26 @@
 }
 ---
 
-<div class="kontakt-form">
-    <form id="kontaktformular" name="kontaktformular" action="#">
-        <h1 id="kontakt-heading"> Kontakt zum Website-Betreiber:</h1>
-        <div class="kontakt-flex2">
-            <label for="absender">Ihre E-Mail-Adresse:</label>
-            <label for="betreff">Betreff:</label>
-            <label for="nachricht">Ihre Nachricht:</label>
-            <input type="submit" value="Abschicken" />
+<form id="kontaktformular" name="kontaktformular" action="#">
+    <h1 id="kontakt-heading"> Kontakt zum Website-Betreiber:</h1>
+
+    <div class="kontakt-form">
+        <div class="kontakt-form-item">
+            <div class="kontakt-flex2">
+                <label for="absender">Ihre E-Mail-Adresse:</label>
+                <label for="betreff">Betreff:</label>
+                <label for="nachricht">Ihre Nachricht:</label>
+                <input type="submit" value="Abschicken" />
+            </div>
         </div>
-        <div class="kontakt-flex2">
+        <div class="kontakt-form-item">
+            <div class="kontakt-flex2">
 
-            <input type="text" id="absender" name="absender" />
-            <input type="text" id="betreff" name="betreff" />
+                <input type="text" id="absender" name="absender" />
+                <input type="text" id="betreff" name="betreff" />
 
-            <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+                <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+            </div>
         </div>
-    </form>
-
-</div>
+    </div>
+</form>
