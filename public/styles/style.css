@@ -306,6 +306,8 @@ li:last-child {
     justify-content: space-around;
     align-items: normal;
     align-content: stretch;
+    max-width: 90%;
+    margin-left: 5%;
 }
 
 .login-kasten,
@@ -355,8 +357,8 @@ li:last-child {
 
 #onboarding-pb {
     border-radius: 50%;
-    height: 18vh;
-    border: 2px solid #4b4b4b;
+    height: 18vh;    
+    border: 2px solid #aba9aa;
 }
 
 /**--------------------Hauptseiten-Gestaltung-------------------------*/
