@@ -350,9 +350,13 @@ li:last-child {
 }
 
 #onboarding_pic {
-    width: 40vh;
-    height: 40vh;
+    width: 50%;
+}
+
+#onboarding-pb {
     border-radius: 50%;
+    height: 18vh;
+    border: 2px solid #4b4b4b;
 }
 
 /**--------------------Hauptseiten-Gestaltung-------------------------*/

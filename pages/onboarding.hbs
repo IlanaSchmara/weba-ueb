@@ -7,19 +7,21 @@
 ---
 
 <div class="onboarding-container">
-        <div class="onboarding-kasten">
-             <h1> Überschrift </h1>
-             <p> Onboarding Text </p>
-             <input type="text" name="eingabe-vorname" value="Vorname">
-             <input type="text" name="eingabe-nachname" value="Nachname">
-             <div class="adress-daten">
-                <input type="number" name="plz" value="">
-                <input type="text" name="eingabe-stadt" value="Stadt">
-             </div>
-             <input type="text" name="eingabe-straße" value="Straße + Haus-Nr.">
-             <button onclick="location.href='/hauptseite.hbs'" class="log-reg-buttons" type="submit" name="weiter-knopf"> 
-                Weiter
-             </button>
-        </div>
-        <img id="onboarding_pic" alt="Onboarding Bild" src="/public/images/onboarding.jpg"/>
+   <div class="onboarding-kasten">
+      <h1> Überschrift </h1>
+      <p> Onboarding Text </p>
+      <input type="text" name="eingabe-vorname" value="Vorname">
+      <input type="text" name="eingabe-nachname" value="Nachname">
+      <div class="adress-daten">
+         <input type="text" name="plz" value="PLZ">
+         <input type="text" name="eingabe-stadt" value="Stadt">
+      </div>
+      <input type="text" name="eingabe-straße" value="Straße + Haus-Nr.">
+      <button onclick="location.href='/hauptseite.hbs'" class="log-reg-buttons" type="submit" name="weiter-knopf">
+         Weiter
+      </button>
+   </div>
+   <div> <img id="onboarding-pb" alt="Profilbild Onboarding" src="/public/images/profile_pictures/onboarding-pb.png">
+   </div>
+   <img id="onboarding_pic" alt="Onboarding Bild" src="/public/images/onboarding.jpg" />
 </div>
