@@ -7,16 +7,29 @@
 ---
 
 <div class="registrieren-container">
+
     <div class="registrieren-kasten">
+
         <h1> Überschrift </h1>
         <p> Registrieren Text </p>
-        <input type="text" name="eingabe-nutzername" value="Nutzername">
-        <input type="password" placeholder="Passwort" name="eingabe-passwort">
-        <input type="password" placeholder="Passwort wiederholen" name="eingabe-passwort-wdh">
-        <input type="text" name="eingabe-email" value="E-Mail-Adresse">
-        <button onclick="location.href='/onboarding.hbs'" class="log-reg-buttons" type="submit" name="senden-knopf">
-            Registrieren, weiter zu Onboarding
+
+        <div class="log-reg-on-eingabe">
+
+            <input class="log-reg-on-input" type="text" name="eingabe-nutzername" placeholder="Nutzername">
+            <input class="log-reg-on-input" type="password" placeholder="Passwort" name="eingabe-passwort">
+            <input class="log-reg-on-input" type="password" placeholder="Passwort wiederholen"
+                name="eingabe-passwort-wdh">
+            <input class="log-reg-on-input" type="text" name="eingabe-email" placeholder="E-Mail-Adresse">
+
+        </div>
+
+        <button onclick="location.href='/onboarding.hbs'" class="log-reg-on-buttons" type="submit"
+            name="registrieren-seite-button">
+            Registrieren
         </button>
+
     </div>
+
     <img id="registrieren_pic" alt="Registrieren Bild" src="/public/images/registrieren.png" />
+
 </div>

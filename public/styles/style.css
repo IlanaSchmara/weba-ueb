@@ -33,7 +33,7 @@
 
 #title-text {
     padding: 2px;
-    font-size: 2vh;
+    font-size: 24px;
     margin-left: 4px;
 
 }
@@ -87,10 +87,7 @@ li:last-child {
 /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
 
 .footer-flex-container {
-    background-color: rgb(172, 171, 171);
-    border-style: hidden;
     height: 10%;
-    width: 90%;
     margin: auto;
     margin-top: 10%;
     display: flex;
@@ -99,36 +96,14 @@ li:last-child {
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
+    border: solid #4b4b4b;
+    border-width: 0px 0vh 1vh;
 }
 
-.flex-items:nth-child(1),
-.flex-items:nth-child(2) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
 
-.flex-items:nth-child(3) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
-
-.flex-items:nth-child(4) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
-
+.footer-flex-container>.flex-items:nth-child(2),
+.flex-items:nth-child(3),
+.flex-items:nth-child(4),
 .flex-items:nth-child(5) {
     display: block;
     flex-grow: 0;
@@ -137,6 +112,8 @@ li:last-child {
     align-self: auto;
     order: 0;
 }
+
+
 
 /** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
 .combined-footer-flex-container {
@@ -161,15 +138,11 @@ li:last-child {
 
 }
 
-
-/** Seite hoch-Symbol**/
-.pageUp {
+/** Seite hoch-Symbol und Icons im Footer**/
+.pageUp, .footerElements  {
     width: 40px;
 }
 
-.footerElements {
-    width: 40px;
-}
 
 /**------------------------ Design-Anpassungen der Startseite------------------------------------ */
 
@@ -207,11 +180,17 @@ li:last-child {
 }
 
 /** Überschrift **/
-#startseite-kundenm {
+.startseite-kundenmeinungen>h2 {
     text-align: left;
     font-size: 6vh;
     margin: 2vh;
     margin-right: auto;
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: flex-start;
+    order: 0;
 }
 
 /** Bild oben auf der Startseite **/
@@ -226,8 +205,8 @@ li:last-child {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
-    align-content: center;
 }
+
 
 /** Container mit KM */
 .flex-kundenmeinungen {
@@ -238,51 +217,21 @@ li:last-child {
     justify-content: space-around;
     align-items: flex-start;
     align-content: center;
-    padding: 15px;
+    padding: 10px;
 }
 
-/** 3 Flex-Boxen für Bild + Kundenmeinung */
-.flex-items:nth-child(1),
-.flex-items:nth-child(2) .flex-items:nth-child(2) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    padding: 0 12px;
-    margin-left: 4vh;
-}
-
-/** Bild in Flexbox */
-.flex-it:nth-child(1) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    order: 0;
-}
-
-/** Text in Flexbox Kundenmeinung */
-.flex-it:nth-child(2) {
-    display: flex;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    text-align: center;
-    font-size: 1em;
-    width: 23%;
+figure>p {
+    max-width: 120px;
 }
 
 #kunde-pic-1,
 #kunde-pic-2,
 #kunde-pic-3 {
-    vertical-align: middle;
     width: 12vh;
     height: 18vh;
     border-radius: 50%;
+    aspect-ratio: auto;
+
 }
 
 
@@ -337,7 +286,8 @@ li:last-child {
 }
 
 /** Button wird blau bei hover */
-.log-reg-buttons:hover {
+.log-reg-buttons:hover,
+figcaption>button:hover {
     background-color: #a8d1d6;
     /* blau */
 }
@@ -357,7 +307,7 @@ li:last-child {
 
 #onboarding-pb {
     border-radius: 50%;
-    height: 18vh;    
+    height: 18vh;
     border: 2px solid #aba9aa;
 }
 
@@ -531,7 +481,7 @@ p.main-table-text {
     align-content: space-between;
     margin-left: 8%;
     width: 85%;
-    background-color: #ced5d4;
+    background-image: linear-gradient(to right, #ffffff, #f1d3dc);
     padding: 1%;
 }
 
@@ -599,7 +549,9 @@ p.main-table-text {
     margin-left: 2vh;
     border-style: solid;
     border-color: #4b4b4b;
-
+    border-radius: 5px 5px 5px 35px;
+    max-width: 78%;
+    padding: 1%;
 }
 
 .thema1-pic {
@@ -676,6 +628,7 @@ p.main-table-text {
     margin-left: 2vh;
     border-style: dashed;
     border-color: #4b4b4b;
+    box-shadow: 13px 13px #b1b1b1;
 
 }
 
@@ -702,6 +655,7 @@ figcaption>button {
     /* rundet den Button leicht ab*/
 }
 
+
 /** Text der Posts*/
 .flex-thema-ao-item:nth-child(2)>p,
 .flex-thema1-item:nth-child(2)>p {
@@ -716,4 +670,150 @@ figcaption>button {
     margin-right: 5%;
     border-style: solid;
     border-color: #4b4b4b;
+}
+
+
+/**---------------------Gestaltung beider Profil Seiten------------------*/
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+/* Alles umfassender Container für die Profilseiten */
+.profil-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.5%;
+    background-color: rgb(174, 238, 217);
+}
+
+/* Profildatenkasten ist der Kasten für alle Profildaten unter dem Profil-Oben-Kasten, Profildaten-Box ist 
+   für die Textfelder der Nutzerdaten und die Eingabefelder zusammen */
+.profil-oben-kasten, .profil-daten-kasten, .profil-daten-box {
+    display: flex;
+}
+
+/* H3 und zurück-Button direkt unter dem Header */
+.profil-oben-kasten {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 40px;
+    background-color: rgb(87, 156, 133);
+}
+
+
+/* Profilbild und ändern-Button*/
+.profilbild-kasten {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    margin-right: 40px;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.pb-profil {
+    height: 18vh;
+    border-radius: 15px;
+    border-color: rgb(87, 156, 133);
+    border-style: solid;
+    margin-bottom: 15px;
+}
+
+/* Kasten für alle Informationen des Users */
+.profil-kasten {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.nutzer-angaben-kasten {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: space-around;
+    background-color: beige;
+    padding-bottom: 20px;
+}
+
+
+/* Kasten für die beschreibenden Textfelder */
+.flex-profildaten-beschreibung {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+    align-items: flex-end;
+}
+
+/* Kasten für die Eingabefelder */
+.flex-profil-eingaben {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 55%;
+}
+
+/* Kasten für die Schloss-Bilder */
+.flex-profil-schloss-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Kasten für Angaben im Fremdprofil*/
+.flex-fremdprofil-daten {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 40%;
+}
+ /* styled die Eingabe-Felder */
+.profil-daten-input {
+    padding: 10px;
+}
+
+.lock-unlocked-pic, .lock-locked-pic {
+    width: 27px;
+}
+
+/* Kasten für die Buttons unten */
+.profil-buttons-unten-reihe {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5% 0;
+    width: 95%;
+}
+
+/* styled die Buttons */
+.zurück-hauptseite-button, .profil-buttons-unten, .pb-ändern-button {
+    background-color: #b3b3b3;
+    border: 2px solid #4b4b4b;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.pb-ändern-button {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.profil-buttons-unten {
+    width: 20%;
+}
+
+.zurück-hauptseite-button:hover, .pb-ändern-button:hover, .profil-buttons-unten:hover {
+    background-color: #a8d1d6;
 }

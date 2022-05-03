@@ -7,22 +7,37 @@
 ---
 
 <div class="onboarding-container">
+
    <div class="onboarding-kasten">
+
       <h1> Überschrift </h1>
       <p> Onboarding Text </p>
-      <input type="text" name="eingabe-vorname" value="Vorname">
-      <input type="text" name="eingabe-nachname" value="Nachname">
-      <div class="adress-daten">
-         <input type="text" name="plz" value="PLZ">
-         <input type="text" name="eingabe-stadt" value="Stadt">
+
+      <div class="log-reg-on-eingabe">
+
+         <input class="log-reg-on-input" type="text" name="eingabe-vorname" placeholder="Vorname">
+         <input class="log-reg-on-input" type="text" name="eingabe-nachname" placeholder="Nachname">
+
+         <div class="adress-daten">
+            <input class="plz-input" type="text" name="plz" placeholder="PLZ">
+            <input class="stadt-input" type="text" name="eingabe-stadt" placeholder="Stadt">
+         </div>
+
+         <input class="log-reg-on-input" type="text" name="eingabe-straße" placeholder="Straße + Haus-Nr.">
+         <input class="log-reg-on-input" type="text" name="eingabe-farbe" placeholder="Deine Farbe">
+         <input class="log-reg-on-input" type="text" name="eingabe-hobby" placeholder="Dein Hobby">
+         <input class="log-reg-on-input" type="text" name="eingabe-tier" placeholder="Dein Tier">
+
       </div>
-      <input type="text" name="eingabe-straße" value="Straße + Haus-Nr.">
-      <button onclick="location.href='/hauptseite.hbs'" class="log-reg-buttons" type="submit" name="weiter-knopf">
+
+      <button onclick="location.href='/hauptseite.hbs'" class="log-reg-on-buttons" type="submit" name="weiter-knopf">
          Weiter
       </button>
    </div>
+
    <div> <img id="onboarding-pb" alt="Profilbild Onboarding"
          src="/public/images/profile_pictures/upload_profile_pic.jpg">
    </div>
+
    <img id="onboarding_pic" alt="Onboarding Bild" src="/public/images/onboarding.jpg" />
 </div>

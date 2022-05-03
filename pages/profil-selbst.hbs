@@ -5,3 +5,54 @@
 "logged-in" : true
 }
 ---
+
+<div class="profil-container">
+
+    <div class="profil-oben-kasten">
+        <h2>Profil von Unbekannt</h2>
+        <button onclick="location.href='/hauptseite.hbs'" class="zurück-hauptseite-button" type="submit"
+            name="zurück-hauptseite">
+            Zurück
+        </button>
+    </div>
+
+    <div class="profil-daten-kasten">
+        <div class="profilbild-kasten">
+            <img class="pb-profil" src="/public/images/profile_pictures/p_blank.jpg" alt="fremdes Profilbild">
+        </div>
+
+        <div class="profil-kasten">
+            <div class="nutzer-angaben-kasten">
+
+                <div class="profil-daten-box">
+                    <div class="flex-profildaten-beschreibung">
+                        <p>Nutzername</p>
+                        <p>Vorname</p>
+                        <p>Nachname</p>
+                        <p>PLZ / Stadt</p>
+                    </div>
+
+                    <div class="flex-fremdprofil-daten">
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>12345 Lorem Ipsum</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="profil-buttons-unten-reihe">
+        <button class="profil-buttons-unten" type="button" name="profil-melden">
+            Profil melden
+        </button>
+        <button class="profil-buttons-unten" type="button" name="profil-ignorieren">
+            Profil ignorieren
+        </button>
+        <button class="profil-buttons-unten" type="button" name="chatnachricht-senden">
+            Chatnachricht senden
+        </button>
+    </div>
+</div>

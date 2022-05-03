@@ -1,6 +1,8 @@
 {
 	"title": "My Awesome Website",
 	"author": "weba_041",
-	"style": "style.css"
+	"style": [
+		"style.css",
+		"style-mobile.css"
+	]
 }
-
