@@ -139,7 +139,8 @@ li:last-child {
 }
 
 /** Seite hoch-Symbol und Icons im Footer**/
-.pageUp, .footerElements  {
+.pageUp,
+.footerElements {
     width: 40px;
 }
 
@@ -161,12 +162,29 @@ li:last-child {
     font-size: large;
 }
 
-.motiavtion-text {
+.motivation-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: normal;
+    align-content: normal;
+}
+
+.motivation-container:nth-child(3) {
+    max-width: 90%;
+}
+
+#motiavtion-text {
     line-height: 1.65;
     text-align: justify;
     padding-left: 1em;
     padding-bottom: 1em;
     padding-right: 1em;
+}
+
+#motivation-pic {
+    height: 8vw;
 }
 
 .h4 {
@@ -191,6 +209,10 @@ li:last-child {
     flex-basis: auto;
     align-self: flex-start;
     order: 0;
+}
+
+.startseite-kundenmeinungen>button{
+    margin-top: 1vh;
 }
 
 /** Bild oben auf der Startseite **/
@@ -218,6 +240,7 @@ li:last-child {
     align-items: flex-start;
     align-content: center;
     padding: 10px;
+    background: beige;
 }
 
 figure>p {
@@ -691,7 +714,9 @@ h3 {
 
 /* Profildatenkasten ist der Kasten für alle Profildaten unter dem Profil-Oben-Kasten, Profildaten-Box ist 
    für die Textfelder der Nutzerdaten und die Eingabefelder zusammen */
-.profil-oben-kasten, .profil-daten-kasten, .profil-daten-box {
+.profil-oben-kasten,
+.profil-daten-kasten,
+.profil-daten-box {
     display: flex;
 }
 
@@ -776,12 +801,14 @@ h3 {
     text-align: end;
     width: 40%;
 }
- /* styled die Eingabe-Felder */
+
+/* styled die Eingabe-Felder */
 .profil-daten-input {
     padding: 10px;
 }
 
-.lock-unlocked-pic, .lock-locked-pic {
+.lock-unlocked-pic,
+.lock-locked-pic {
     width: 27px;
 }
 
@@ -794,7 +821,9 @@ h3 {
 }
 
 /* styled die Buttons */
-.zurück-hauptseite-button, .profil-buttons-unten, .pb-ändern-button {
+.zurück-hauptseite-button,
+.profil-buttons-unten,
+.pb-ändern-button {
     background-color: #b3b3b3;
     border: 2px solid #4b4b4b;
     color: white;
@@ -814,6 +843,8 @@ h3 {
     width: 20%;
 }
 
-.zurück-hauptseite-button:hover, .pb-ändern-button:hover, .profil-buttons-unten:hover {
+.zurück-hauptseite-button:hover,
+.pb-ändern-button:hover,
+.profil-buttons-unten:hover {
     background-color: #a8d1d6;
 }
