@@ -1,850 +1,861 @@
-/** CSS-Datei zum stylen von unseren Website-Komponenten */
-
-
-/**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
-
-.flex-weba-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: normal;
-}
-
-.flex-weba-header-child1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-}
-
-.flex-weba-header-child2,
-.flex-weba-header-child3 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-around;
-}
-
-#title-text {
-    padding: 2px;
-    font-size: 24px;
-    margin-left: 4px;
-
-}
-
-#header-logo {
-    margin-left: 1vh;
-    height: 52px;
-}
-
-.logo {
-    padding: 2px;
-    height: 6vh;
-    margin-left: 1vh;
-}
-
-.flex-weba-header-child3 ul {
-    display: flex;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-    justify-content: center;
-}
-
-li {
-    list-style: none;
-    margin-right: 10px;
-}
-
-li:last-child {
-    margin-right: 0px;
-}
-
-
-#header-user-pic {
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    margin-left: 2vh;
-}
-
-.header-logged-in {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-}
-
-
-/**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
-
-.footer-flex-container {
-    height: 10%;
-    margin: auto;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-around;
-    border: solid #4b4b4b;
-    border-width: 0px 0vh 1vh;
-}
-
-
-.footer-flex-container>.flex-items:nth-child(2),
-.flex-items:nth-child(3),
-.flex-items:nth-child(4),
-.flex-items:nth-child(5) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
-
-
-
-/** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
-.combined-footer-flex-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-}
-
-/** 2 beinhaltet Logo/Titel*/
-/** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
-.second-footer-flex-container,
-.third-footer-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-around;
-
-}
-
-/** Seite hoch-Symbol und Icons im Footer**/
-.pageUp,
-.footerElements {
-    width: 40px;
-}
-
-
-/**------------------------ Design-Anpassungen der Startseite------------------------------------ */
-
-.startseite-container {
-    position: relative;
-    text-align: center;
-}
-
-.centered-right {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: white;
-    font-size: large;
-}
-
-.motivation-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: normal;
-    align-content: normal;
-}
-
-.motivation-container:nth-child(3) {
-    max-width: 90%;
-}
-
-#motiavtion-text {
-    line-height: 1.65;
-    text-align: justify;
-    padding-left: 1em;
-    padding-bottom: 1em;
-    padding-right: 1em;
-}
-
-#motivation-pic {
-    height: 8vw;
-}
-
-.h4 {
-    font-size: 28px;
-}
-
-#startseite-ueberschrift {
-    text-align: left;
-    margin: 2vh;
-    font-size: 7vh;
-}
-
-/** Überschrift **/
-.startseite-kundenmeinungen>h2 {
-    text-align: left;
-    font-size: 6vh;
-    margin: 2vh;
-    margin-right: auto;
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: flex-start;
-    order: 0;
-}
-
-.startseite-kundenmeinungen>button{
-    margin-top: 1vh;
-}
-
-/** Bild oben auf der Startseite **/
-#startseite-pic {
-    width: 100%;
-}
-
-/** Container mit Überschrift, flexbox für KM und Registrierknopf */
-.startseite-kundenmeinungen {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-
-/** Container mit KM */
-.flex-kundenmeinungen {
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: center;
-    padding: 10px;
-    background: beige;
-}
-
-figure>p {
-    max-width: 120px;
-}
-
-#kunde-pic-1,
-#kunde-pic-2,
-#kunde-pic-3 {
-    width: 12vh;
-    height: 18vh;
-    border-radius: 50%;
-    aspect-ratio: auto;
-
-}
-
-
-.flex-kundemeinung-1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-}
-
-/**------------------- Login-, Registrieren-, Onboarding-Seite Gestaltung--------------------- */
-
-.login-container,
-.registrieren-container,
-.onboarding-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: normal;
-    align-content: stretch;
-    max-width: 90%;
-    margin-left: 5%;
-}
-
-.login-kasten,
-.registrieren-kasten,
-.onboarding-kasten {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: stretch;
-}
-
-.log-reg-buttons {
-    background-color: #b3b3b3;
-    /* Grey */
-    border: 2px solid #4b4b4b;
-    color: white;
-    /* text colour*/
-    padding: 10px 20px;
-    /* wie viel Button um Text herum ist, höhe breite */
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 2px;
-    /* rundet den Button leicht ab*/
-}
-
-/** Button wird blau bei hover */
-.log-reg-buttons:hover,
-figcaption>button:hover {
-    background-color: #a8d1d6;
-    /* blau */
-}
-
-.adress-daten {
-    display: flex;
-    flex-direction: row;
-}
-
-#registrieren_pic {
-    width: 50%
-}
-
-#onboarding_pic {
-    width: 50%;
-}
-
-#onboarding-pb {
-    border-radius: 50%;
-    height: 18vh;
-    border: 2px solid #aba9aa;
-}
-
-/**--------------------Hauptseiten-Gestaltung-------------------------*/
-
-
-.searchButton {
-    width: 40px;
-    height: 36px;
-    border: 1px dotted #a7a7a7;
-    background: #a7a7a7;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.search {
-    width: 100%;
-    display: flex;
-    margin-top: 2vh;
-    margin-left: 2vh;
-    margin-bottom: 2vh;
-}
-
-
-#main-page-search {
-    width: 20%;
-    border: 3px solid #a7a7a7;
-    border-right: none;
-    padding: 5px;
-    height: 20px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #aaaaaa;
-}
-
-#main-page-search:focus {
-    color: #6acec9;
-}
-
-.main-table {
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: center;
-    outline: 1px dashed rgb(107, 107, 107);
-    overflow-y: scroll;
-    margin-left: 2%;
-    max-width: 90%;
-    padding: 1%;
-}
-
-.main-table-cell {
-    display: flex;
-    flex-direction: row;
-    width: 26%;
-    background: rgb(255, 255, 255);
-    margin: 2%;
-    flex: auto;
-    text-align: center;
-
-    min-height: 50px;
-}
-
-.main-table-entry {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: center;
-    outline: 1px solid rgb(107, 107, 107);
-}
-
-.main-table-heading {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: center;
-    outline: 1px solid rgb(107, 107, 107);
-}
-
-
-p.main-table-text {
-    white-space: nowrap;
-    width: 75ch;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-#new-topic-button {
-    background-color: #b3b3b3;
-    /* Grey */
-    border: 2px solid #4b4b4b;
-    color: white;
-    /* text colour*/
-    padding: 10px 20px;
-    /* wie viel Button um Text herum ist, höhe breite */
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 2px;
-    /* rundet den Button leicht ab*/
-    margin-left: 5vh;
-    margin-top: 2vh;
-}
-
-#new-topic-button:hover {
-    background-color: #a8d1d6;
-    /* blau */
-}
-
-.main-tab-pic {
-    width: 12vh;
-    height: 12vh;
-    border-radius: 50%;
-}
-
-/**--------------------Kontaktformular-------------------------*/
-
-.kontakt-form {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: center;
-    margin-left: 2vw;
-}
-
-.kontakt-flex2 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: center;
-    margin-left: 4vw;
-}
-
-#kontakt-heading {
-    font-size: 24px;
-    margin-left: 4vw;
-}
-
-.kontakt-form-item {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
-
-
-/**--------------------Themenseite-Designanpassungen-------------------------*/
-.flex-themenseite-oben {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: space-between;
-    margin-left: 8%;
-    width: 85%;
-    background-image: linear-gradient(to right, #ffffff, #f1d3dc);
-    padding: 1%;
-}
-
-.flex-themenseite-themen {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-}
-
-#back-button {
-    margin-left: 10%;
-}
-
-.themen-oben-pic {
-    width: 24vh;
-    border-radius: 50%;
-    margin-right: 5%;
-    border-style: solid;
-    border-color: #4b4b4b;
-}
-
-#themen-ueberschrift {
-    font-size: 24px;
-    margin-left: 3vh;
-    text-decoration: underline;
-}
-
-.flex-themenseite-item {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-}
-
-.flex-themenseite-item:nth-child(2) {
-    display: block;
-    flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
-
-.flex-thema1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: center;
-    align-content: normal;
-
-}
-
-.flex-thema1-item:nth-child(2) {
-    display: block;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    margin-left: 2vh;
-    border-style: solid;
-    border-color: #4b4b4b;
-    border-radius: 5px 5px 5px 35px;
-    max-width: 78%;
-    padding: 1%;
-}
-
-.thema1-pic {
-    width: 18vh;
-    border-radius: 50%;
-    margin-right: 5%;
-    border-style: solid;
-    border-color: #4b4b4b;
-}
-
-.flex-thema1-item figcaption {
-    font-family: Arial;
-    color: #4b4b4b;
-    margin-left: 30%;
-    margin-top: 3%;
-}
-
-.flex-thema-ao-item figcaption {
-    font-family: Arial;
-    color: #4b4b4b;
-    margin-left: 22%;
-    margin-top: 3%;
-}
-
-/** --- styled alle themenseiten-einträge------ */
-.flex-thema-ao {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 2%;
-    margin-left: 10%;
-
-}
-
-.flex-thema-new {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 2%;
-    margin-left: 38%;
-}
-
-.flex-thema-ao-item,
-.flex-thema-new-item {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-}
-
-.flex-thema-new-item>.thema-ao-pic {
-    width: 12vh;
-    height: 12vh;
-    border-radius: 50%;
-    margin-left: 20%;
-    border-style: solid;
-    border-color: #4b4b4b;
-    margin-bottom: 28%;
-
-}
-
-/** styled nur den text dieser einträge*/
-.flex-thema-ao-item:nth-child(2) {
-    width: 43%;
-    /* gibt die weite des Texts vor */
-    margin-left: 2vh;
-    border-style: dashed;
-    border-color: #4b4b4b;
-    box-shadow: 13px 13px #b1b1b1;
-
-}
-
-figure>input {
-    background-color: #FFF;
-    min-width: 100%;
-    min-height: 140px;
-}
-
-/** selects the button after figcaption to submit a post*/
-figcaption>button {
-    background-color: #b3b3b3;
-    /* Grey */
-    border: 2px solid #4b4b4b;
-    color: white;
-    /* text colour*/
-    padding: 10px 20px;
-    /* wie viel Button um Text herum ist, höhe breite */
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    margin-top: 2%;
-    border-radius: 2px;
-    /* rundet den Button leicht ab*/
-}
-
-
-/** Text der Posts*/
-.flex-thema-ao-item:nth-child(2)>p,
-.flex-thema1-item:nth-child(2)>p {
-    margin-left: 1vh;
-}
-
-/** Bilder der Fremdnutzer-Einträge */
-.thema-ao-pic {
-    width: 12vh;
-    height: 12vh;
-    border-radius: 50%;
-    margin-right: 5%;
-    border-style: solid;
-    border-color: #4b4b4b;
-}
-
-
-/**---------------------Gestaltung beider Profil Seiten------------------*/
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 20px;
-}
-
-/* Alles umfassender Container für die Profilseiten */
-.profil-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 2.5%;
-    background-color: rgb(174, 238, 217);
-}
-
-/* Profildatenkasten ist der Kasten für alle Profildaten unter dem Profil-Oben-Kasten, Profildaten-Box ist 
+@import url("style-mobile.css");
+
+@media screen and (min-width: 400px) {
+
+    /** CSS-Datei zum stylen von unseren Website-Komponenten */
+
+
+    /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
+
+    .flex-weba-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: normal;
+    }
+
+    .flex-weba-header-child1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    .flex-weba-header-child2,
+    .flex-weba-header-child3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    #title-text {
+        padding: 2px;
+        font-size: 24px;
+        margin-left: 4px;
+
+    }
+
+    #header-logo {
+        margin-left: 1vh;
+        height: 52px;
+    }
+
+    .logo {
+        padding: 2px;
+        height: 6vh;
+        margin-left: 1vh;
+    }
+
+    .flex-weba-header-child3 ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+        margin-right: 10px;
+    }
+
+    li:last-child {
+        margin-right: 0px;
+    }
+
+
+    #header-user-pic {
+        width: 6vh;
+        height: 6vh;
+        border-radius: 50%;
+        margin-left: 2vh;
+    }
+
+    .header-logged-in {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+
+    /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
+
+    .footer-flex-container {
+        height: 10%;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        border: solid #4b4b4b;
+        border-width: 0px 0vh 1vh;
+    }
+
+
+    .footer-flex-container>.flex-items:nth-child(2),
+    .flex-items:nth-child(3),
+    .flex-items:nth-child(4),
+    .flex-items:nth-child(5) {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+    }
+
+
+
+    /** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
+    .combined-footer-flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    /** 2 beinhaltet Logo/Titel*/
+    /** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
+    .second-footer-flex-container,
+    .third-footer-flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+
+    }
+
+    /** Seite hoch-Symbol und Icons im Footer**/
+    .pageUp,
+    .footerElements {
+        width: 40px;
+    }
+
+
+    /**------------------------ Design-Anpassungen der Startseite------------------------------------ */
+
+    .startseite-container {
+        position: relative;
+        text-align: center;
+    }
+
+    .centered-right {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: white;
+        font-size: large;
+    }
+
+    .motivation-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: normal;
+        align-content: normal;
+    }
+
+    .motivation-container>article {
+
+        background-image: url('/images/leaf.png');
+    }
+
+    .motivation-container:nth-child(3) {
+        max-width: 90%;
+        background-image: url('/images/leaf.png');
+    }
+
+    #motiavtion-text {
+        line-height: 1.65;
+        text-align: justify;
+        padding-left: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+    }
+
+    #motivation-pic {
+        height: 6vw;
+    }
+
+    .h4 {
+        font-size: 28px;
+    }
+
+    #startseite-ueberschrift {
+        text-align: left;
+        margin: 2vh;
+        font-size: 7vh;
+    }
+
+    /** Überschrift **/
+    .startseite-kundenmeinungen>h2 {
+        text-align: left;
+        font-size: 6vh;
+        margin: 2vh;
+        margin-right: auto;
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: flex-start;
+        order: 0;
+    }
+
+    .startseite-kundenmeinungen>button {
+        margin-top: 1vh;
+    }
+
+    /** Bild oben auf der Startseite **/
+    #startseite-pic {
+        width: 100%;
+    }
+
+    /** Container mit Überschrift, flexbox für KM und Registrierknopf */
+    .startseite-kundenmeinungen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    /** Container mit KM */
+    .flex-kundenmeinungen {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+        padding: 10px;
+        background: beige;
+    }
+
+    figure>p {
+        max-width: 120px;
+    }
+
+    #kunde-pic-1,
+    #kunde-pic-2,
+    #kunde-pic-3 {
+        width: 12vh;
+        height: 18vh;
+        border-radius: 50%;
+        aspect-ratio: auto;
+
+    }
+
+
+    .flex-kundemeinung-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    /**------------------- Login-, Registrieren-, Onboarding-Seite Gestaltung--------------------- */
+
+    .login-container,
+    .registrieren-container,
+    .onboarding-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: normal;
+        align-content: stretch;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    .login-kasten,
+    .registrieren-kasten,
+    .onboarding-kasten {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+
+    .log-reg-buttons {
+        background-color: #b3b3b3;
+        /* Grey */
+        border: 2px solid #4b4b4b;
+        color: white;
+        /* text colour*/
+        padding: 10px 20px;
+        /* wie viel Button um Text herum ist, höhe breite */
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 2px;
+        /* rundet den Button leicht ab*/
+    }
+
+    /** Button wird blau bei hover */
+    .log-reg-buttons:hover,
+    figcaption>button:hover {
+        background-color: #a8d1d6;
+        /* blau */
+    }
+
+    .adress-daten {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #registrieren_pic {
+        width: 50%
+    }
+
+    #onboarding_pic {
+        width: 50%;
+    }
+
+    #onboarding-pb {
+        border-radius: 50%;
+        height: 18vh;
+        border: 2px solid #aba9aa;
+    }
+
+    /**--------------------Hauptseiten-Gestaltung-------------------------*/
+
+
+    .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 1px dotted #a7a7a7;
+        background: #a7a7a7;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .search {
+        width: 100%;
+        display: flex;
+        margin-top: 2vh;
+        margin-left: 2vh;
+        margin-bottom: 2vh;
+    }
+
+
+    #main-page-search {
+        width: 20%;
+        border: 3px solid #a7a7a7;
+        border-right: none;
+        padding: 5px;
+        height: 20px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #aaaaaa;
+    }
+
+    #main-page-search:focus {
+        color: #6acec9;
+    }
+
+    .main-table {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+        outline: 1px dashed rgb(107, 107, 107);
+        overflow-y: scroll;
+        margin-left: 2%;
+        max-width: 90%;
+        padding: 1%;
+    }
+
+    .main-table-cell {
+        display: flex;
+        flex-direction: row;
+        width: 26%;
+        background: rgb(255, 255, 255);
+        margin: 2%;
+        flex: auto;
+        text-align: center;
+
+        min-height: 50px;
+    }
+
+    .main-table-entry {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+        outline: 1px solid rgb(107, 107, 107);
+    }
+
+    .main-table-heading {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+        outline: 1px solid rgb(107, 107, 107);
+    }
+
+
+    p.main-table-text {
+        white-space: nowrap;
+        width: 75ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+
+    #new-topic-button {
+        background-color: #b3b3b3;
+        /* Grey */
+        border: 2px solid #4b4b4b;
+        color: white;
+        /* text colour*/
+        padding: 10px 20px;
+        /* wie viel Button um Text herum ist, höhe breite */
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 2px;
+        /* rundet den Button leicht ab*/
+        margin-left: 5vh;
+        margin-top: 2vh;
+    }
+
+    #new-topic-button:hover {
+        background-color: #a8d1d6;
+        /* blau */
+    }
+
+    .main-tab-pic {
+        width: 12vh;
+        height: 12vh;
+        border-radius: 50%;
+    }
+
+    /**--------------------Kontaktformular-------------------------*/
+
+    .kontakt-form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        margin-left: 2vw;
+    }
+
+    .kontakt-flex2 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: center;
+        margin-left: 4vw;
+    }
+
+    #kontakt-heading {
+        font-size: 24px;
+        margin-left: 4vw;
+    }
+
+    .kontakt-form-item {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+    }
+
+
+    /**--------------------Themenseite-Designanpassungen-------------------------*/
+    .flex-themenseite-oben {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: space-between;
+        margin-left: 8%;
+        width: 85%;
+        background-image: linear-gradient(to right, #ffffff, #f1d3dc);
+        padding: 1%;
+    }
+
+    .flex-themenseite-themen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        align-items: normal;
+        align-content: normal;
+    }
+
+    #back-button {
+        margin-left: 10%;
+    }
+
+    .themen-oben-pic {
+        width: 24vh;
+        border-radius: 50%;
+        margin-right: 5%;
+        border-style: solid;
+        border-color: #4b4b4b;
+    }
+
+    #themen-ueberschrift {
+        font-size: 24px;
+        margin-left: 3vh;
+        text-decoration: underline;
+    }
+
+    .flex-themenseite-item {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+    }
+
+    .flex-themenseite-item:nth-child(2) {
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 2;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+    }
+
+    .flex-thema1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: normal;
+        align-items: center;
+        align-content: normal;
+
+    }
+
+    .flex-thema1-item:nth-child(2) {
+        display: block;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+        margin-left: 2vh;
+        border-style: solid;
+        border-color: #4b4b4b;
+        border-radius: 5px 5px 5px 35px;
+        max-width: 78%;
+        padding: 1%;
+    }
+
+    .thema1-pic {
+        width: 18vh;
+        border-radius: 50%;
+        margin-right: 5%;
+        border-style: solid;
+        border-color: #4b4b4b;
+    }
+
+    .flex-thema1-item figcaption {
+        font-family: Arial;
+        color: #4b4b4b;
+        margin-left: 30%;
+        margin-top: 3%;
+    }
+
+    .flex-thema-ao-item figcaption {
+        font-family: Arial;
+        color: #4b4b4b;
+        margin-left: 22%;
+        margin-top: 3%;
+    }
+
+    /** --- styled alle themenseiten-einträge------ */
+    .flex-thema-ao {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        margin-top: 2%;
+        margin-left: 10%;
+
+    }
+
+    .flex-thema-new {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        margin-top: 2%;
+        margin-left: 38%;
+    }
+
+    .flex-thema-ao-item,
+    .flex-thema-new-item {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+    }
+
+    .flex-thema-new-item>.thema-ao-pic {
+        width: 12vh;
+        height: 12vh;
+        border-radius: 50%;
+        margin-left: 20%;
+        border-style: solid;
+        border-color: #4b4b4b;
+        margin-bottom: 28%;
+
+    }
+
+    /** styled nur den text dieser einträge*/
+    .flex-thema-ao-item:nth-child(2) {
+        width: 43%;
+        /* gibt die weite des Texts vor */
+        margin-left: 2vh;
+        border-style: dashed;
+        border-color: #4b4b4b;
+        box-shadow: 13px 13px #b1b1b1;
+
+    }
+
+    figure>input {
+        background-color: #FFF;
+        min-width: 100%;
+        min-height: 140px;
+    }
+
+    /** selects the button after figcaption to submit a post*/
+    figcaption>button {
+        background-color: #b3b3b3;
+        /* Grey */
+        border: 2px solid #4b4b4b;
+        color: white;
+        /* text colour*/
+        padding: 10px 20px;
+        /* wie viel Button um Text herum ist, höhe breite */
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 2%;
+        border-radius: 2px;
+        /* rundet den Button leicht ab*/
+    }
+
+
+    /** Text der Posts*/
+    .flex-thema-ao-item:nth-child(2)>p,
+    .flex-thema1-item:nth-child(2)>p {
+        margin-left: 1vh;
+    }
+
+    /** Bilder der Fremdnutzer-Einträge */
+    .thema-ao-pic {
+        width: 12vh;
+        height: 12vh;
+        border-radius: 50%;
+        margin-right: 5%;
+        border-style: solid;
+        border-color: #4b4b4b;
+    }
+
+
+    /**---------------------Gestaltung beider Profil Seiten------------------*/
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 20px;
+    }
+
+    /* Alles umfassender Container für die Profilseiten */
+    .profil-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 2.5%;
+        background-color: rgb(174, 238, 217);
+    }
+
+    /* Profildatenkasten ist der Kasten für alle Profildaten unter dem Profil-Oben-Kasten, Profildaten-Box ist 
    für die Textfelder der Nutzerdaten und die Eingabefelder zusammen */
-.profil-oben-kasten,
-.profil-daten-kasten,
-.profil-daten-box {
-    display: flex;
-}
+    .profil-oben-kasten,
+    .profil-daten-kasten,
+    .profil-daten-box {
+        display: flex;
+    }
 
-/* H3 und zurück-Button direkt unter dem Header */
-.profil-oben-kasten {
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    margin-bottom: 40px;
-    background-color: rgb(87, 156, 133);
-}
-
-
-/* Profilbild und ändern-Button*/
-.profilbild-kasten {
-    display: flex;
-    flex-direction: column;
-    margin: 20px 0;
-    margin-right: 40px;
-    margin-left: 5%;
-    align-items: center;
-}
-
-.pb-profil {
-    height: 18vh;
-    border-radius: 15px;
-    border-color: rgb(87, 156, 133);
-    border-style: solid;
-    margin-bottom: 15px;
-}
-
-/* Kasten für alle Informationen des Users */
-.profil-kasten {
-    display: flex;
-    flex-direction: column;
-    font-size: large;
-    justify-content: space-between;
-    width: 55%;
-}
-
-.nutzer-angaben-kasten {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10%;
-    justify-content: space-around;
-    background-color: beige;
-    padding-bottom: 20px;
-}
+    /* H3 und zurück-Button direkt unter dem Header */
+    .profil-oben-kasten {
+        justify-content: space-between;
+        align-items: center;
+        padding: 1%;
+        margin-bottom: 40px;
+        background-color: rgb(87, 156, 133);
+    }
 
 
-/* Kasten für die beschreibenden Textfelder */
-.flex-profildaten-beschreibung {
-    display: flex;
-    flex-direction: column;
-    min-width: 25%;
-    align-items: flex-end;
-}
+    /* Profilbild und ändern-Button*/
+    .profilbild-kasten {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        margin-right: 40px;
+        margin-left: 5%;
+        align-items: center;
+    }
 
-/* Kasten für die Eingabefelder */
-.flex-profil-eingaben {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-top: 10px;
-    margin-left: 40px;
-    width: 55%;
-}
+    .pb-profil {
+        height: 18vh;
+        border-radius: 15px;
+        border-color: rgb(87, 156, 133);
+        border-style: solid;
+        margin-bottom: 15px;
+    }
 
-/* Kasten für die Schloss-Bilder */
-.flex-profil-schloss-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 19px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
+    /* Kasten für alle Informationen des Users */
+    .profil-kasten {
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        justify-content: space-between;
+        width: 55%;
+    }
 
-/* Kasten für Angaben im Fremdprofil*/
-.flex-fremdprofil-daten {
-    display: flex;
-    flex-direction: column;
-    text-align: end;
-    width: 40%;
-}
+    .nutzer-angaben-kasten {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        justify-content: space-around;
+        background-color: beige;
+        padding-bottom: 20px;
+    }
 
-/* styled die Eingabe-Felder */
-.profil-daten-input {
-    padding: 10px;
-}
 
-.lock-unlocked-pic,
-.lock-locked-pic {
-    width: 27px;
-}
+    /* Kasten für die beschreibenden Textfelder */
+    .flex-profildaten-beschreibung {
+        display: flex;
+        flex-direction: column;
+        min-width: 25%;
+        align-items: flex-end;
+    }
 
-/* Kasten für die Buttons unten */
-.profil-buttons-unten-reihe {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 5% 0;
-    width: 95%;
-}
+    /* Kasten für die Eingabefelder */
+    .flex-profil-eingaben {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 10px;
+        margin-left: 40px;
+        width: 55%;
+    }
 
-/* styled die Buttons */
-.zurück-hauptseite-button,
-.profil-buttons-unten,
-.pb-ändern-button {
-    background-color: #b3b3b3;
-    border: 2px solid #4b4b4b;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 2px;
-}
+    /* Kasten für die Schloss-Bilder */
+    .flex-profil-schloss-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
-.pb-ändern-button {
-    padding: 5px 10px;
-    font-size: 12px;
-}
+    /* Kasten für Angaben im Fremdprofil*/
+    .flex-fremdprofil-daten {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        width: 40%;
+    }
 
-.profil-buttons-unten {
-    width: 20%;
-}
+    /* styled die Eingabe-Felder */
+    .profil-daten-input {
+        padding: 10px;
+    }
 
-.zurück-hauptseite-button:hover,
-.pb-ändern-button:hover,
-.profil-buttons-unten:hover {
-    background-color: #a8d1d6;
+    .lock-unlocked-pic,
+    .lock-locked-pic {
+        width: 27px;
+    }
+
+    /* Kasten für die Buttons unten */
+    .profil-buttons-unten-reihe {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 5% 0;
+        width: 95%;
+    }
+
+    /* styled die Buttons */
+    .zurück-hauptseite-button,
+    .profil-buttons-unten,
+    .pb-ändern-button {
+        background-color: #b3b3b3;
+        border: 2px solid #4b4b4b;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 2px;
+    }
+
+    .pb-ändern-button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .profil-buttons-unten {
+        width: 20%;
+    }
+
+    .zurück-hauptseite-button:hover,
+    .pb-ändern-button:hover,
+    .profil-buttons-unten:hover {
+        background-color: #a8d1d6;
+    }
 }
