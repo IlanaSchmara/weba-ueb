@@ -1,1 +1,271 @@
-/** CSS-Datei für Anpassungen der mobilen Darstellung */
+@media screen and (max-width: 400px) {
+
+    /** CSS-Datei für Anpassungen der mobilen Darstellung */
+
+    body {
+        width: 125vw;
+    }
+
+    /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
+
+    .flex-weba-header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-content: normal;
+    }
+
+    .flex-weba-header-child1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+    }
+
+    .flex-weba-header-child3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-content: space-around;
+    }
+
+    .flex-weba-header-child2 {
+        visibility: hidden;
+
+    }
+
+    #title-text {
+        padding: 2px;
+        font-size: 24px;
+        margin-left: 4px;
+
+    }
+
+    #header-logo {
+        margin-left: 1vh;
+        height: 10vh;
+    }
+
+    .logo {
+        padding: 2px;
+        height: 6vh;
+        margin-left: 1vh;
+    }
+
+    .flex-weba-header-child3 ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+        margin-right: 10px;
+    }
+
+
+
+    #header-user-pic {
+        width: 6vh;
+        height: 6vh;
+        border-radius: 50%;
+        margin-left: 2vh;
+    }
+
+    .header-logged-in {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
+
+    .footer-flex-container {
+        height: 10%;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        border: solid #4b4b4b;
+        border-width: 0px 0vh 1vh;
+    }
+
+
+    /** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
+    .combined-footer-flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        order: 4;
+    }
+
+    /** 2 beinhaltet Logo/Titel*/
+    /** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
+    .second-footer-flex-container,
+    .third-footer-flex-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        font-size: 20px;
+
+    }
+
+    /** Seite hoch-Symbol und Icons im Footer**/
+    .pageUp,
+    .footerElements {
+        width: 16vw;
+    }
+
+    .flex-items-pageUp {
+        order: 5;
+        align-self: flex-end;
+    }
+
+    .mobile-kontakt {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /**------------------------ Design-Anpassungen der Startseite------------------------------------ */
+
+
+    .startseite-container {
+        position: relative;
+        text-align: center;
+    }
+
+    .centered-right {
+        bottom: 20px;
+        right: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+        color: #4b4b4b;
+        font-size: x-large;
+    }
+
+    .motivation-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: normal;
+        align-content: normal;
+    }
+
+
+    .motivation-container:nth-child(3) {
+        max-width: 90%;
+        background-image: url('/images/leaf.png');
+    }
+
+    #motiavtion-text {
+        line-height: 1.65;
+        text-align: justify;
+        padding-left: 1em;
+        padding-bottom: 1em;
+        padding-right: 1em;
+    }
+
+    #motivation-pic {
+        height: 6vw;
+    }
+
+    .h4 {
+        font-size: 28px;
+    }
+
+    #startseite-ueberschrift {
+        text-align: left;
+        margin: 2vh;
+        font-size: 7vh;
+    }
+
+    /** Überschrift **/
+    .startseite-kundenmeinungen>h2 {
+        text-align: left;
+        font-size: 6vh;
+        margin: 2vh;
+        margin-right: auto;
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: flex-start;
+        order: 0;
+    }
+
+    .startseite-kundenmeinungen>button {
+        margin-top: 1vh;
+    }
+
+    /** Bild oben auf der Startseite **/
+    #startseite-pic {
+        width: 180vw;
+    }
+
+    /** Container mit Überschrift, flexbox für KM und Registrierknopf */
+    .startseite-kundenmeinungen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    /** Container mit KM */
+    .flex-kundenmeinungen {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: center;
+        padding: 10px;
+        background: beige;
+    }
+
+    .flex-kundenmeinungen p {
+        text-align: center;
+    }
+
+    figure>p {
+        max-width: 120px;
+    }
+
+    #kunde-pic-1,
+    #kunde-pic-2,
+    #kunde-pic-3 {
+        width: 20vh;
+        height: 20vh;
+        border-radius: 50%;
+
+    }
+
+
+    .flex-kundemeinung-1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+    }
+}
