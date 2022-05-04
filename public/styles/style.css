@@ -4,7 +4,6 @@
 
     /** CSS-Datei zum stylen von unseren Website-Komponenten */
 
-
     /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
 
     .flex-weba-header {
@@ -105,20 +104,6 @@
     }
 
 
-    .footer-flex-container>.flex-items:nth-child(2),
-    .flex-items:nth-child(3),
-    .flex-items:nth-child(4),
-    .flex-items:nth-child(5) {
-        display: block;
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: auto;
-        align-self: auto;
-        order: 0;
-    }
-
-
-
     /** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
     .combined-footer-flex-container {
         display: flex;
@@ -128,6 +113,14 @@
         align-items: center;
         align-content: space-around;
     }
+
+
+    /** Seite hoch-Symbol und Icons im Footer**/
+    .pageUp,
+    .footerElements {
+        width: 40px;
+    }
+
 
     /** 2 beinhaltet Logo/Titel*/
     /** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
@@ -139,13 +132,17 @@
         justify-content: center;
         align-items: center;
         align-content: space-around;
+        font-size: 20px;
 
     }
 
-    /** Seite hoch-Symbol und Icons im Footer**/
-    .pageUp,
-    .footerElements {
-        width: 40px;
+    .mobile-kontakt {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile-kontakt .flex-items {
+        margin-right: 1vh;
     }
 
 
@@ -257,8 +254,6 @@
         width: 12vh;
         height: 18vh;
         border-radius: 50%;
-        aspect-ratio: auto;
-
     }
 
 

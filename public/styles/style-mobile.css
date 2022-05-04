@@ -142,6 +142,10 @@
         flex-direction: row;
     }
 
+    .mobile-kontakt .flex-items {
+        margin-right: 1vh;
+    }
+
 
     /**------------------------ Design-Anpassungen der Startseite------------------------------------ */
 
@@ -253,8 +257,8 @@
     #kunde-pic-1,
     #kunde-pic-2,
     #kunde-pic-3 {
-        width: 20vh;
-        height: 20vh;
+        width: 19vh;
+        height: 19vh;
         border-radius: 50%;
 
     }
