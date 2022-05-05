@@ -865,7 +865,8 @@
 
     .zurück-hauptseite-button:hover,
     .pb-ändern-button:hover,
-    .profil-buttons-unten:hover {
+    .profil-buttons-unten:hover,
+    figcaption>button:hover {
         background-color: #a8d1d6;
     }
 }
