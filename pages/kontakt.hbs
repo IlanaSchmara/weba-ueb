@@ -6,7 +6,7 @@
 }
 ---
 
-<form id="kontaktformular" name="kontaktformular" action="#">
+<form id="kontaktformular" name="kontaktformular" method="POST" action="/form">
     <h1 id="kontakt-heading"> Kontakt zum Website-Betreiber:</h1>
 
     <div class="kontakt-form">
@@ -21,10 +21,10 @@
         <div class="kontakt-form-item">
             <div class="kontakt-flex2">
 
-                <input type="text" id="absender" name="absender" />
-                <input type="text" id="betreff" name="betreff" />
+                <input type="email" id="absender" name="absender" required />
+                <input type="text" id="betreff" name="betreff" required />
 
-                <textarea id="nachricht" name="nachricht" cols="20" rows="5"></textarea>
+                <textarea id="nachricht" name="nachricht" cols="20" rows="5">Ihre Nachricht an uns.</textarea>
             </div>
         </div>
     </div>

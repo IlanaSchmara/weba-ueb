@@ -524,7 +524,10 @@
         align-content: space-between;
         margin-left: 8%;
         width: 85%;
-        background-image: linear-gradient(to right, #ffffff, #f1d3dc);
+        background-image: url(../images/thema-bg.png);
+        background-size: 60% auto;
+        background-repeat: no-repeat;
+        background-position: right;
         padding: 1%;
     }
 
@@ -563,6 +566,7 @@
         align-self: auto;
     }
 
+    /**Überschrift der Themenseite/ bzw. Thema nimmt größere Breite ein*/
     .flex-themenseite-item:nth-child(2) {
         display: block;
         flex-grow: 1;
