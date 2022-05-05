@@ -87,7 +87,7 @@
 
     /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
 
-    .footer-flex-container {
+    .weba_041-footer {
         height: 10%;
         margin: auto;
         margin-top: 10%;
@@ -176,7 +176,6 @@
 
     .motivation-container:nth-child(3) {
         max-width: 90%;
-        background-image: url('/images/leaf.png');
     }
 
     #motiavtion-text {

@@ -13,6 +13,9 @@
         justify-content: space-between;
         align-items: flex-start;
         align-content: normal;
+
+        border: solid #c07e89;
+        border-width: 1vh 0vh 0vh 0vh;
     }
 
     .flex-weba-header-child1 {
@@ -89,7 +92,7 @@
 
     /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
 
-    .footer-flex-container {
+    .weba_041-footer {
         height: 10%;
         margin: auto;
         margin-top: 10%;
@@ -99,8 +102,10 @@
         justify-content: space-around;
         align-items: center;
         align-content: space-around;
-        border: solid #4b4b4b;
+        border: solid #c07e89;
         border-width: 0px 0vh 1vh;
+        background-image: url("../images/leaf.png");
+        background-size: inherit;
     }
 
 
@@ -185,7 +190,7 @@
     }
 
     #motivation-pic {
-        height: 8vw;
+        height: 6vw;
     }
 
     .h4 {
