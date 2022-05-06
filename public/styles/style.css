@@ -15,7 +15,7 @@
         align-content: normal;
 
         border: solid #c07e89;
-        border-width: 1vh 0vh 0vh 0vh;
+        border-width: 2vh 0vh 0vh 0vh;
     }
 
     .flex-weba-header-child1 {
@@ -73,11 +73,13 @@
     }
 
 
+    /** Bild im Header nach Log-In*/
     #header-user-pic {
         width: 6vh;
         height: 6vh;
         border-radius: 50%;
         margin-left: 2vh;
+        margin-top: 4%;
     }
 
     .header-logged-in {
@@ -602,7 +604,8 @@
     }
 
     .thema1-pic {
-        width: 10vw;
+        width: 15vh;
+        height: 15vh;
         border-radius: 50%;
         margin-right: 5%;
         border-style: solid;
