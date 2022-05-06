@@ -10,34 +10,46 @@
 
    <div class="onboarding-kasten">
 
-      <h1> Überschrift </h1>
-      <p> Onboarding Text </p>
+      <div class="onb-text-pb-box">
+         <div>
+            <h1> Überschrift </h1>
+            <p> Onboarding Text </p>
+         </div>
+         <img id="onboarding-pb" alt="Profilbild Onboarding"
+            src="/public/images/profile_pictures/upload_profile_pic.jpg">
+      </div>
 
-      <div class="log-reg-on-eingabe">
+      <div class="onb-kasten-innen">
 
-         <input class="log-reg-on-input" type="text" name="eingabe-vorname" placeholder="Vorname">
-         <input class="log-reg-on-input" type="text" name="eingabe-nachname" placeholder="Nachname">
+         <div class="log-reg-on-eingabefelder">
 
-         <div class="adress-daten">
-            <input class="plz-input" type="text" name="plz" placeholder="PLZ">
-            <input class="stadt-input" type="text" name="eingabe-stadt" placeholder="Stadt">
+            <input class="log-reg-on-input" type="text" name="eingabe-vorname" placeholder="Vorname">
+            <input class="log-reg-on-input" type="text" name="eingabe-nachname" placeholder="Nachname">
+
+            <div class="adress-daten">
+               <input class="plz-input" type="text" name="plz" placeholder="PLZ">
+               <input class="stadt-input" type="text" name="eingabe-stadt" placeholder="Stadt">
+            </div>
+
+            <input class="log-reg-on-input" type="text" name="eingabe-straße" placeholder="Straße + Haus-Nr.">
+            <input class="log-reg-on-input" type="text" name="eingabe-farbe" placeholder="Deine Farbe">
+            <input class="log-reg-on-input" type="text" name="eingabe-hobby" placeholder="Dein Hobby">
+            <input class="log-reg-on-input" type="text" name="eingabe-tier" placeholder="Dein Tier">
+
          </div>
 
-         <input class="log-reg-on-input" type="text" name="eingabe-straße" placeholder="Straße + Haus-Nr.">
-         <input class="log-reg-on-input" type="text" name="eingabe-farbe" placeholder="Deine Farbe">
-         <input class="log-reg-on-input" type="text" name="eingabe-hobby" placeholder="Dein Hobby">
-         <input class="log-reg-on-input" type="text" name="eingabe-tier" placeholder="Dein Tier">
+         <button onclick="location.href='/hauptseite.hbs'" class="log-reg-on-buttons" type="submit" name="weiter-knopf">
+            Weiter
+         </button>
 
       </div>
 
-      <button onclick="location.href='/hauptseite.hbs'" class="log-reg-on-buttons" type="submit" name="weiter-knopf">
-         Weiter
-      </button>
    </div>
 
-   <div> <img id="onboarding-pb" alt="Profilbild Onboarding"
-         src="/public/images/profile_pictures/upload_profile_pic.jpg">
+
+
+   <div class="log-reg-on-bild-kasten">
+      <img id="onboarding_pic" alt="Onboarding Bild" src="/public/images/onboarding.jpg" />
    </div>
 
-   <img id="onboarding_pic" alt="Onboarding Bild" src="/public/images/onboarding.jpg" />
 </div>
