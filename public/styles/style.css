@@ -12,7 +12,7 @@
 
     a:hover, a:active {
         text-decoration: none;
-        color:#0ab13a;
+        color:#0e8d32;
     }
 
     /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
@@ -818,7 +818,7 @@
 
 
     /* Kasten für die beschreibenden Textfelder */
-    .flex-profildaten-beschreibung {
+    .flex-dein-profildaten-beschreibung, .flex-fremd-profildaten-beschreibung {
         display: flex;
         flex-direction: column;
         min-width: 25%;
