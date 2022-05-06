@@ -10,26 +10,29 @@
 
     <div class="registrieren-kasten">
 
-        <h1> Überschrift </h1>
-        <p> Registrieren Text </p>
+        <div class="log-reg-kasten">
 
-        <div class="log-reg-on-eingabe">
+            <h1 class="log-reg-h1"> Überschrift </h1>
+            <p class="log-reg-text"> Registrieren Text </p>
 
-            <input class="log-reg-on-input" type="text" placeholder="Nutzername" name="eingabe-nutzername" required>
-            <input class="log-reg-on-input" type="password" placeholder="Passwort" name="eingabe-passwort" required>
-            <input class="log-reg-on-input" type="password" placeholder="Passwort wiederholen"
-                name="eingabe-passwort-wdh">
-            <input class="log-reg-on-input" type="text" name="eingabe-email" placeholder="E-Mail-Adresse" required>
+            <div class="log-reg-on-eingabefelder">
+                <input class="log-reg-on-input" type="text" placeholder="Nutzername" name="eingabe-nutzername" required>
+                <input class="log-reg-on-input" type="password" placeholder="Passwort" name="eingabe-passwort" required>
+                <input class="log-reg-on-input" type="password" placeholder="Passwort wiederholen" name="eingabe-passwort-wdh">
+                <input class="log-reg-on-input" type="text" name="eingabe-email" placeholder="E-Mail-Adresse" required>
+            </div>
+
+            <button onclick="location.href='/onboarding.hbs'" class="log-reg-on-buttons" type="submit"
+                name="registrieren-seite-button">
+                Registrieren
+            </button>
 
         </div>
 
-        <button onclick="location.href='/onboarding.hbs'" class="log-reg-on-buttons" type="submit"
-            name="registrieren-seite-button">
-            Registrieren
-        </button>
-
     </div>
 
-    <img id="registrieren_pic" alt="Registrieren Bild" src="/public/images/registrieren.png" />
+    <div class="log-reg-on-bild-kasten">
+        <img id="registrieren_pic" alt="Registrieren Bild" src="/public/images/registrieren.png" />
+    </div>
 
 </div>

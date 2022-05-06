@@ -3,7 +3,29 @@
     /** CSS-Datei für Anpassungen der mobilen Darstellung */
 
     body {
-        width: 125vw;
+        width: 160vw;
+    }
+
+    p {
+        font-size: x-large;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: none;
+        color: #0ab13a;
+    }
+
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 5%;
+        font-size: x-large;
     }
 
     /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
@@ -15,6 +37,7 @@
         justify-content: space-between;
         align-items: flex-start;
         align-content: normal;
+        background-color: rgb(247, 248, 203);
     }
 
     .flex-weba-header-child1 {
@@ -32,8 +55,7 @@
     }
 
     .flex-weba-header-child2 {
-        visibility: hidden;
-
+        display: none;
     }
 
     #title-text {
@@ -87,63 +109,59 @@
 
     /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
 
-    .weba_041-footer {
-        height: 10%;
-        margin: auto;
-        margin-top: 10%;
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        align-content: space-around;
-        border: solid #4b4b4b;
-        border-width: 0px 0vh 1vh;
+        margin: 2.5%;
+        padding: 2.5%;
+        background-image: url("../images/leaf.png");
+        background-size: inherit;
+        background-color: #a5dab2;
     }
 
-
-    /** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
     .combined-footer-flex-container {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        align-content: space-around;
-        order: 4;
+        width: 100%;
     }
 
-    /** 2 beinhaltet Logo/Titel*/
-    /** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
-    .second-footer-flex-container,
-    .third-footer-flex-container {
+    .navi-logo-box {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        align-content: space-around;
-        font-size: 20px;
-
+        gap: 40px 20%;
+        margin: 5%;
+        padding: 2.5%;
+        background-color: #b3b3b3;
     }
+
+    .logo-titel-box {
+        display: flex;
+        order: 4;
+        align-items: center;
+    }
+
+    .flex-items-pageUp {
+        order: 5;
+        display: flex;
+        align-self: flex-end;
+    }
+
+    .social-media-box {
+        display: flex;
+        justify-content: center;
+        gap: 15%;
+    }
+
 
     /** Seite hoch-Symbol und Icons im Footer**/
     .pageUp,
     .footerElements {
         width: 16vw;
-    }
-
-    .flex-items-pageUp {
-        order: 5;
-        align-self: flex-end;
-    }
-
-    .mobile-kontakt {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .mobile-kontakt .flex-items {
-        margin-right: 1vh;
     }
 
 
@@ -220,7 +238,7 @@
 
     /** Bild oben auf der Startseite **/
     #startseite-pic {
-        width: 180vw;
+        width: 150vw;
     }
 
     /** Container mit Überschrift, flexbox für KM und Registrierknopf */
@@ -271,4 +289,204 @@
         align-items: stretch;
         align-content: stretch;
     }
+
+    /**------------------- Login-, Registrieren-, Onboarding-Seite Gestaltung--------------------- */
+    .login-container,
+    .registrieren-container,
+    .onboarding-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-kasten,
+    .registrieren-kasten,
+    .onboarding-kasten,
+    .log-reg-kasten,
+    .onb-kasten-innen {
+        display: flex;
+        flex-direction: column;
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    .onb-text-pb-box {
+        display: flex;
+        justify-content: space-between;
+        margin: 2.5% 10%;
+    }
+
+    .log-reg-kasten,
+    .onb-kasten-innen {
+        margin: 0;
+    }
+
+    .log-reg-text,
+    .log-reg-h1 {
+        margin-left: 10%;
+    }
+
+    .log-reg-on-eingabefelder {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 5% 0;
+        width: 80%;
+        align-self: center;
+    }
+
+    .log-reg-on-input,
+    .plz-input,
+    .stadt-input {
+        padding: 20px;
+        font-size: large;
+    }
+
+    .log-reg-buttons,
+    .log-reg-on-buttons,
+    #back-button {
+        background-color: #b3b3b3;
+        border: 2px solid #4b4b4b;
+        color: white;
+        /* Text-Farbe */
+        padding: 10px 20px;
+        /* wie viel Button um Text herum ist, höhe breite */
+        text-align: center;
+        display: inline-block;
+        font-size: large;
+        border-radius: 2px;
+        /* rundet den Button leicht ab*/
+    }
+
+    .log-reg-on-buttons {
+        padding: 10px 40px;
+        align-self: center;
+    }
+
+    /** Button wird blau bei hover */
+    .log-reg-buttons:hover,
+    .log-reg-on-buttons:hover,
+    #back-button:hover {
+        background-color: #a8d1d6;
+    }
+
+    .log-reg-on-bild-kasten {
+        display: flex;
+        justify-content: center;
+    }
+
+    #login_pic {
+        width: 150vw;
+    }
+
+    .adress-daten {
+        display: flex;
+    }
+
+    .plz-input {
+        margin-right: 10px;
+        width: 30%;
+    }
+
+    .stadt-input {
+        width: 70%;
+    }
+
+    #registrieren_pic,
+    #onboarding_pic {
+        width: 95%
+    }
+
+    #onboarding-pb {
+        border-radius: 50%;
+        height: 15vh;
+        border: 2px solid #aba9aa;
+        align-self: center;
+    }
+
+    /**---------------------Gestaltung beider Profil Seiten------------------*/
+
+    /* Alles umfassender Container für die Profilseiten */
+    .profil-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 5% 0;
+        background-color: rgb(174, 238, 217);
+    }
+
+    .profil-daten-kasten {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profil-oben-kasten {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5%;
+        margin-bottom: 5%;
+        background-color: rgb(87, 156, 133);
+    }
+
+    .h2-profil {
+        margin-left: 5%;
+        font-size: xx-large;
+    }
+
+    .profilbild-kasten {
+        display: flex;
+        flex-direction: column;
+        margin: 2.5% 0 12.5% 0;
+        align-items: center;
+    }
+
+    .pb-profil {
+        height: 40vh;
+        border-radius: 60px;
+        border-color: rgb(87, 156, 133);
+        border-style: solid;
+        margin-bottom: 3%;
+    }
+
+    .profil-daten-box {
+        display: flex;
+    }
+
+    /* Kasten für alle Informationen des Users */
+    .profil-kasten {
+        display: flex;
+        flex-direction: column;
+        font-size: large;
+        justify-content: space-between;
+        margin: 2.5%;
+    }
+
+    
+    .nutzer-angaben-kasten {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: beige;
+        padding-bottom: 5%;
+    }
+
+
+    .zurück-hauptseite-button,
+    .profil-buttons-unten,
+    .pb-ändern-button {
+        background-color: #b3b3b3;
+        border: 2px solid #4b4b4b;
+        color: white;
+        padding: 10px 40px;
+        text-align: center;
+        display: inline-block;
+        font-size: large;
+        border-radius: 2px;
+    }
+
+    .pb-ändern-button {
+        padding: 10px 40px;
+    }
+
 }

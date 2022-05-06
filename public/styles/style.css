@@ -4,6 +4,17 @@
 
     /** CSS-Datei zum stylen von unseren Website-Komponenten */
 
+
+    a:link, a:visited {
+        text-decoration: none;
+        color:#000000;
+    }
+
+    a:hover, a:active {
+        text-decoration: none;
+        color:#0ab13a;
+    }
+
     /**----------------------------------------- Design-Anpassungen des Headers--------------------------------------------------*/
 
     .flex-weba-header {
@@ -13,9 +24,8 @@
         justify-content: space-between;
         align-items: flex-start;
         align-content: normal;
-
         border: solid #c07e89;
-        border-width: 2vh 0vh 0vh 0vh;
+        border-width: 1vh 0vh 0vh 0vh;
     }
 
     .flex-weba-header-child1 {
@@ -73,13 +83,11 @@
     }
 
 
-    /** Bild im Header nach Log-In*/
     #header-user-pic {
         width: 6vh;
         height: 6vh;
         border-radius: 50%;
         margin-left: 2vh;
-        margin-top: 4%;
     }
 
     .header-logged-in {
@@ -94,62 +102,55 @@
 
     /**----------------------------------------- Design-Anpassungen des Footers --------------------------------------------------*/
 
-    .weba_041-footer {
-        height: 10%;
-        margin: auto;
-        margin-top: 10%;
+    footer {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-around;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 30vh;
+        margin-top: 10%;
         border: solid #c07e89;
         border-width: 0px 0vh 1vh;
         background-image: url("../images/leaf.png");
         background-size: inherit;
+        background-color: #a5dab2;
     }
 
-
-    /** beinhaltet die Flexbox Webseiten-Logo/Titel und die Social-Media-Flexbox*/
     .combined-footer-flex-container {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: space-around;
+        font-size: larger;
     }
 
+    .flex-items-pageUp {
+        margin-left: 0.5%; 
+    }
+
+    .navi-logo-box {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12%;
+        margin-right: 15%;
+        align-items: center;
+        margin-bottom: 2.5%;
+    }
+
+    .logo-titel-box {
+        display: flex;
+        align-items: center;
+    }
+
+    .social-media-box {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: #949494;
+    }
 
     /** Seite hoch-Symbol und Icons im Footer**/
     .pageUp,
     .footerElements {
         width: 40px;
-    }
-
-
-    /** 2 beinhaltet Logo/Titel*/
-    /** 3 beinhaltet das Instagram, Facebook und Twitter-Logo*/
-    .second-footer-flex-container,
-    .third-footer-flex-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: space-around;
-        font-size: 20px;
-
-    }
-
-    .mobile-kontakt {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .mobile-kontakt .flex-items {
-        margin-right: 1vh;
     }
 
 
@@ -279,25 +280,37 @@
     .onboarding-container {
         display: flex;
         justify-content: space-around;
-        margin-left: 5%;
     }
 
     .login-kasten,
     .registrieren-kasten,
-    .onboarding-kasten {
+    .onboarding-kasten, 
+    .log-reg-kasten, 
+    .onb-kasten-innen {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 30%;
+        width: 40%;
+        margin: 2.5% 0 2.5% 10%;
     }
 
-    .log-reg-on-eingabe {
+    .log-reg-kasten, .onb-kasten-innen {
+        width: 50%;
+        margin: 0;
+    }
+
+    .onb-text-pb-box {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0;
+    }
+
+    .log-reg-on-eingabefelder {
         display: flex;
         flex-direction: column;
         gap: 18px;
         margin: 5% 0;
-        width: 70%;
+        width: 100%;
     }
 
     .log-reg-on-input,
@@ -306,8 +319,8 @@
         padding: 10px;
     }
 
-    .log-reg-on-buttons,
-    .log-reg-buttons,
+
+    .log-reg-buttons, .log-reg-on-buttons,
     #back-button {
         background-color: #b3b3b3;
         border: 2px solid #4b4b4b;
@@ -322,11 +335,22 @@
         /* rundet den Button leicht ab*/
     }
 
+    .log-reg-on-buttons {
+        /** Button in der Mitte der Box */
+        align-self: center;
+    }
+
     /** Button wird blau bei hover */
     .log-reg-buttons:hover,
     .log-reg-on-buttons:hover,
     #back-button:hover {
         background-color: #a8d1d6;
+    }
+
+    .log-reg-on-bild-kasten {
+        display: flex;
+        justify-content: center;
+        width: 50%;
     }
 
     .adress-daten {
@@ -343,16 +367,16 @@
     }
 
     #registrieren_pic {
-        width: 50%
+        width: 80%;
     }
 
     #onboarding_pic {
-        width: 45%;
+        width: 85%;
     }
 
     #onboarding-pb {
         border-radius: 50%;
-        height: 18vh;
+        height: 12vh;
         border: 2px solid #aba9aa;
     }
 
@@ -604,8 +628,7 @@
     }
 
     .thema1-pic {
-        width: 15vh;
-        height: 15vh;
+        width: 18vh;
         border-radius: 50%;
         margin-right: 5%;
         border-style: solid;
@@ -615,7 +638,7 @@
     .flex-thema1-item figcaption {
         font-family: Arial;
         color: #4b4b4b;
-        margin-left: 25%;
+        margin-left: 30%;
         margin-top: 3%;
     }
 

@@ -2,28 +2,36 @@
 {
 "title": "Login",
 "template": "full-html",
-"Register": true
+"Register": true,
+"style": ["style.css", "style-mobile.css"]
 }
 ---
-
 
 <div class="login-container">
 
     <div class="login-kasten">
 
-        <h1> Überschrift </h1>
+        <div class="log-reg-kasten">
 
-        <p> Login Text </p>
+            <h1 class="log-reg-h1"> Überschrift </h1>
+            <p class="log-reg-text"> Login Text </p>
+        
+            <div class="log-reg-on-eingabefelder">
+                <input class="log-reg-on-input" type="text" name="eingabe-nutzername" placeholder="Nutzername">
+                <input class="log-reg-on-input" type="password" placeholder="Passwort" name="eingabe-passwort">
+            </div>
 
-        <div class="log-reg-on-eingabe">
-            <input class="log-reg-on-input" type="text" name="eingabe-nutzername" placeholder="Nutzername">
-            <input class="log-reg-on-input" type="password" placeholder="Passwort" name="eingabe-passwort">
+            <button onclick="location.href='/hauptseite.hbs'" class="log-reg-on-buttons" type="submit" name="senden-knopf">
+                Login
+            </button>
+
         </div>
 
-        <button onclick="location.href='/hauptseite.hbs'" class="log-reg-on-buttons" type="submit" name="senden-knopf">
-            Login
-        </button>
     </div>
 
-    <img id="login_pic" alt="Login Bild" src="/public/images/login_site.png" />
+
+    <div class="log-reg-on-bild-kasten">
+        <img id="login_pic" alt="Login Bild" src="/public/images/login_site.png" />
+    </div>
+
 </div>

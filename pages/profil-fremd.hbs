@@ -2,14 +2,14 @@
 {
 "title": "Profilseite",
 "template": "full-html",
-"logged-in": true
+"logged-in" : true
 }
 ---
 
 <div class="profil-container">
 
     <div class="profil-oben-kasten">
-        <h2>Dein Profil</h2>
+        <h2 class="h2-profil">Profil von Unbekannt</h2>
         <button onclick="location.href='/hauptseite.hbs'" class="zurück-hauptseite-button" type="submit"
             name="zurück-hauptseite">
             Zurück
@@ -18,82 +18,41 @@
 
     <div class="profil-daten-kasten">
         <div class="profilbild-kasten">
-            <img class="pb-profil" src="/public/images/profile_pictures/p_blank.jpg" alt="Dein Profilbild">
-            <button class="pb-ändern-button" type="button" name="pb-ändern">
-                ändern
-            </button>
+            <img class="pb-profil" src="/public/images/profile_pictures/p_blank.jpg" alt="fremdes Profilbild">
         </div>
 
         <div class="profil-kasten">
             <div class="nutzer-angaben-kasten">
 
-                <h3>Dein Account</h3>
-
                 <div class="profil-daten-box">
                     <div class="flex-profildaten-beschreibung">
                         <p>Nutzername</p>
-                        <p>E-Mail-Adresse</p>
-                        <p>Passwort</p>
-                    </div>
-
-                    <div class="flex-profil-eingaben">
-                        <input class="profil-daten-input" type="text" name="profil-nutzername" placeholder="Nutzername">
-                        <input class="profil-daten-input" type="text" name="profil-e-mail" placeholder="E-Mail-Adresse">
-                        <input class="profil-daten-input" type="password" name="profil-passwort" placeholder="Passwort">
-                    </div>
-                </div>
-
-
-                <h3>Deine Informationen</h3>
-
-                <div class="profil-daten-box">
-                    <div class="flex-profildaten-beschreibung">
                         <p>Vorname</p>
                         <p>Nachname</p>
                         <p>PLZ / Stadt</p>
-                        <p>Straße + Haus-Nr.</p>
-                        <p>Deine Farbe</p>
-                        <p>Dein Hobby</p>
-                        <p>Dein Tier</p>
                     </div>
 
-                    <div class="flex-profil-eingaben">
-                        <input class="profil-daten-input" type="text" name="profil-vorname" placeholder="Vorname">
-                        <input class="profil-daten-input" type="text" name="profil-nachname" placeholder="Nachname">
-                        <div class="adress-daten">
-                            <input class="plz-input" type="text" name="plz" placeholder="PLZ">
-                            <input class="stadt-input" type="text" name="eingabe-stadt" placeholder="Stadt">
-                        </div>
-                        <input class="profil-daten-input" type="text" name="profil-straße"
-                            placeholder="Straße + Haus-Nr.">
-                        <input class="profil-daten-input" type="text" name="profil-farbe" placeholder="Deine Farbe">
-                        <input class="profil-daten-input" type="text" name="profil-hobby" placeholder="Dein Hobby">
-                        <input class="profil-daten-input" type="text" name="profil-tier" placeholder="Dein Tier">
-                    </div>
-
-                    <div class="flex-profil-schloss-icons">
-                        <img class="lock-unlocked-pic" src="/public/images/lock_unlocked.png" alt="unlocked">
-                        <img class="lock-unlocked-pic" src="/public/images/lock_unlocked.png" alt="unlocked">
-                        <img class="lock-unlocked-pic" src="/public/images/lock_unlocked.png" alt="unlocked">
-                        <img class="lock-locked-pic" src="/public/images/lock_locked.png" alt="locked">
-                        <img class="lock-unlocked-pic" src="/public/images/lock_unlocked.png" alt="unlocked">
-                        <img class="lock-unlocked-pic" src="/public/images/lock_unlocked.png" alt="unlocked">
-                        <img class="lock-unlocked-pic" src="/public/images/lock_unlocked.png" alt="unlocked">
+                    <div class="flex-fremdprofil-daten">
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>Lorem Ipsum</p>
+                        <p>12345 Lorem Ipsum</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
 
     <div class="profil-buttons-unten-reihe">
-        <button class="profil-buttons-unten" type="button" name="profil-änderung-speichern">
-            Änderung speichern
+        <button class="profil-buttons-unten" type="button" name="profil-melden">
+            Profil melden
         </button>
-        <button class="profil-buttons-unten" type="button" name="profil-änderung-verwerfen">
-            Änderung verwerfen
+        <button class="profil-buttons-unten" type="button" name="profil-ignorieren">
+            Profil ignorieren
         </button>
-        <button class="profil-buttons-unten" type="button" name="profil-löschen">
-            Profil löschen
+        <button class="profil-buttons-unten" type="button" name="chatnachricht-senden">
+            Chatnachricht senden
         </button>
     </div>
 </div>
